@@ -469,6 +469,7 @@ a {
     &__items-two {
         display: flex;
         justify-content: space-around;
+        padding: 0 130px;
     }
     
     &__item > div {
@@ -485,7 +486,7 @@ a {
 
 .heart {
     position: relative;
-    width: 970px;
+    width: 1190px;
     height: 315px;
     background-image: url(../img/heart.png);
     background-repeat: no-repeat;
@@ -494,6 +495,7 @@ a {
     &__container {
         position: absolute;
         right: 0;
+        width: 970px;
     }
 
     &__title {
@@ -512,5 +514,12 @@ a {
         background: #83F4BA;
         box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
         border-radius: 40px;
+        border: none;
+    }
+    &__btn a {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        color: #7A4AE6;
     }
 }

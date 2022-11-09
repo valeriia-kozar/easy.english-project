@@ -193,7 +193,8 @@ a {
   background-repeat: no-repeat;
   background-size: 1000px;
   background-position: right center;
-  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
 }
 .banner__img {
   position: absolute;
@@ -382,6 +383,7 @@ a {
 .stairway__items-two {
   display: flex;
   justify-content: space-around;
+  padding: 0 130px;
 }
 .stairway__item > div {
   display: flex;
@@ -395,7 +397,7 @@ a {
 
 .heart {
   position: relative;
-  width: 970px;
+  width: 1190px;
   height: 315px;
   background-image: url(../img/heart.png);
   background-repeat: no-repeat;
@@ -404,6 +406,7 @@ a {
 .heart__container {
   position: absolute;
   right: 0;
+  width: 970px;
 }
 .heart__title {
   font-style: italic;
@@ -419,6 +422,11 @@ a {
   background: #83F4BA;
   box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
   border-radius: 40px;
+  border: none;
 }
-
-/*# sourceMappingURL=styles.css.map */
+.heart__btn a {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  color: #7A4AE6;
+}/*# sourceMappingURL=styles.css.map */
