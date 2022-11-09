@@ -24,7 +24,7 @@
 }
 
 body {
-    font-family: 'Geometria';
+    font-family: 'Geometria', serif;
     color: rgb(255, 255, 255);
 }
 
@@ -241,7 +241,7 @@ a {
 
     &__decor {
         position: relative;
-        height: 0px;
+        height: 0;
         bottom: 283px;
         left: 25px;
     }
@@ -440,7 +440,7 @@ a {
     }
 
     &__comments {
-        background-image: url(../img/Vector\ bg2.png);
+        background-image: url(../img/comments_bg.png);
         background-repeat: no-repeat;
     }
 
@@ -471,10 +471,13 @@ a {
         justify-content: space-around;
     }
     
-    &__items > div {
+    &__item > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 128px;
         height: 128px;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
 }
@@ -507,7 +510,7 @@ a {
         width: 366px;
         height: 71px;
         background: #83F4BA;
-        box-shadow: 0px 7px 20px rgba(131, 244, 186, 0.5);
+        box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
         border-radius: 40px;
     }
 }
