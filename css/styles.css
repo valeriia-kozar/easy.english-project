@@ -2,7 +2,7 @@
   font-size: 20px;
   line-height: 25px; }
 
-.header .head, .background__container, .easy__container, .price, .price__container, .course, .course__content, .stairway {
+.header .head, .background__container, .easy__container, .price, .price__container, .course, .course__content, .stairway, .heart, .feedback {
   width: 1190px;
   margin: auto; }
 
@@ -321,7 +321,6 @@ a {
 
 .heart {
   position: relative;
-  width: 1190px;
   height: 315px;
   background-image: url(../img/heart.png);
   background-repeat: no-repeat;
@@ -349,5 +348,33 @@ a {
     font-size: 25px;
     line-height: 31px;
     color: #7A4AE6; }
+
+.feedback {
+  margin-top: 120px; }
+  .feedback__container {
+    position: relative; }
+  .feedback__title {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    color: #473C4B;
+    text-align: right;
+    margin-bottom: 90px; }
+  .feedback__image-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 17px; }
+  .feedback__image-box {
+    display: flex;
+    gap: 20px; }
+  .feedback__image-seven {
+    position: absolute;
+    left: 365px;
+    bottom: 30px; }
+  .feedback__image-bg {
+    position: absolute;
+    right: -100px;
+    top: 360px; }
 
 /*# sourceMappingURL=styles.css.map */
