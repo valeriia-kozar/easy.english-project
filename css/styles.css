@@ -1,8 +1,8 @@
-.header__nav-link, .header__btn-text, .background__text-lesson, .easy__content-text {
+.header__nav-link, .header__btn-text, .background__text-lesson, .easy__content-text, .footer__nav-link, .footer__tel, .footer__email {
   font-size: 20px;
   line-height: 25px; }
 
-.header .head, .background__container, .easy__container, .price, .price__container, .course, .course__content, .stairway, .heart, .feedback {
+.header .head, .background__container, .easy__container, .price, .price__container, .course, .course__content, .stairway, .heart, .feedback, .form, .footer__container {
   width: 1190px;
   margin: auto; }
 
@@ -328,8 +328,11 @@ a {
   .heart__container {
     position: absolute;
     right: 0;
-    width: 970px; }
+    width: 970px;
+    display: flex;
+    align-items: center; }
   .heart__title {
+    width: 455px;
     font-style: italic;
     font-weight: 500;
     font-size: 30px;
@@ -376,5 +379,106 @@ a {
     position: absolute;
     right: -100px;
     top: 360px; }
+
+.form {
+  margin-top: 220px; }
+  .form__title {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 57px;
+    color: #473C4B; }
+  .form__container {
+    height: 640px;
+    display: flex;
+    background: #7A4AE6;
+    border-radius: 30px;
+    padding: 50px 50px 0 50px;
+    position: relative;
+    margin-top: 60px; }
+  .form__elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px; }
+  .form__laptop-title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px; }
+  .form__laptop-text {
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 25px; }
+  .form__laptop-img {
+    position: absolute;
+    left: -30px;
+    top: 227px; }
+  .form__label {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 10px; }
+  .form__input {
+    width: 511px;
+    height: 65px;
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding: 20px 30px;
+    border: none;
+    margin-top: 10px;
+    font-size: 20px; }
+  .form__input::placeholder {
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(46, 53, 58, 0.3); }
+  .form__input:focus {
+    border: none; }
+  .form__btn {
+    height: 65px;
+    border: 3px solid #83F4BA;
+    filter: drop-shadow(7px 8px 30px rgba(131, 244, 186, 0.5));
+    border-radius: 50px;
+    background-color: transparent; }
+  .form__btn a {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 31px; }
+
+.footer {
+  margin-top: 100px;
+  height: 200px;
+  background-color: #83F4BA; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; }
+  .footer__box:nth-child(2) {
+    text-align: right; }
+  .footer__nav {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; }
+  .footer__nav-items {
+    display: flex;
+    flex-direction: row; }
+  .footer__nav-link {
+    margin-right: 25px;
+    font-weight: 500;
+    color: #000; }
+  .footer__box-image img {
+    margin-left: 15px; }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px; }
+  .footer__tel, .footer__email {
+    font-weight: 500;
+    text-decoration: underline;
+    color: #000000; }
 
 /*# sourceMappingURL=styles.css.map */

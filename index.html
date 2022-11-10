@@ -172,31 +172,31 @@
                     <h5 class="stairway__title">Чому слід обрати саме EasyEnglish?</h5>
                     <div class="stairway__items">
                         <div class="stairway__item">
-                            <div class="stairway__books"><img src="img/Books.png" alt=""></div>
+                            <div class="stairway__books"><img src="img/books.svg" alt=""></div>
                             <p class="stairway__text">Сучасні методики викладання</p>
                         </div>
                         <div class="stairway__item">
-                            <div class="stairway__arrow"><img src="img/dashed-border.png" alt=""></div>
+                            <div class="stairway__arrow"><img src="img/dashed-border.svg" alt=""></div>
                         </div>
                         <div class="stairway__item">
-                            <div class="stairway__comments"><img src="img/comments.png" alt=""></div>
+                            <div class="stairway__comments"><img src="img/comments.svg" alt=""></div>
                             <p class="stairway__text">Заняття онлайн у групах або індивідуально</p>
                         </div>
                         <div class="stairway__item">
-                            <div class="stairway__arrow"><img src="img/dashed-border.png" alt=""></div>
+                            <div class="stairway__arrow"><img src="img/dashed-border.svg" alt=""></div>
                         </div>
                         <div class="stairway__item">
-                            <div class="stairway__patent"><img src="img/Patent.png" alt=""></div>
+                            <div class="stairway__patent"><img src="img/patent.svg" alt=""></div>
                             <p class="stairway__text">Cертифікат по завершенню курсу</p>
                         </div>
                     </div>
                     <div class="stairway__items-two">
                         <div class="stairway__item">
-                            <div class="stairway__papers"><img src="img/papers.png" alt=""></div>
+                            <div class="stairway__papers"><img src="img/papers.svg" alt=""></div>
                             <p class="stairway__text">Easy домашні завдання</p>
                         </div>
                         <div class="stairway__item">
-                            <div class="stairway__textbook"><img src="img/Textbook.png" alt=""></div>
+                            <div class="stairway__textbook"><img src="img/textbook.svg" alt=""></div>
                             <p class="stairway__text">Доступ до всіх занять, слів та програми</p>
                         </div>
                     </div> 
@@ -206,6 +206,7 @@
                 <div class="heart__container">
                     <h6 class="heart__title">Ще не визначився? Запишися на пробний урок!</h6>
                     <button class="heart__btn"><a href="#">Хочу пробний урок</a></button>
+                    <div class="heart__image"><img src="img/plane.svg" alt=""></div>
                 </div>
             </div>
             <section class="feedback">
@@ -231,9 +232,60 @@
             </section>
             <section class="form">
                 <h7 class="form__title">Ну всьо, час записуватись на пробний урок!</h7>
-                <form action=""></form>
+                <div class="form__container">
+                    <div class="form__laptop">
+                        <h8 class="form__laptop-title">Запис на пробний урок</h8>
+                        <p class="form__laptop-text">45 хв з викладачем онлайн-школи EasyEnglish. Покажемо як проходять заняття та визначимо план навчання.</p>
+                        <div class="form__laptop-img"><img src="img/formLaptop.svg" alt=""></div>
+                    </div>
+                    <form action="form__elements" class="form__elements">
+                        <div class="form__textarea">
+                            <label for="name" class="form__label">Ваше ім’я</label>
+                            <input type="name" class="form__input" placeholder="Ім’я">
+                        </div>
+                        <div class="form__textarea">
+                            <label for="tel" class="form__label">Номер телефону</label>
+                            <input type="tel" class="form__input" placeholder="+380 68 888 0088">
+                        </div>
+                        <div class="form__textarea">
+                            <label for="email" class="form__label">Електронна пошта</label>
+                            <input type="email" class="form__input" placeholder="weloveukraine@gmail.com">
+                        </div>
+                        <button class="form__btn"><a href="#">Записатись</a></button>
+                    </form>
+                </div>
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__box">
+                    <div class="footer__logo"><img src="img/logoFooter.svg" alt=""></div>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-items">
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Про нас</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Курси</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Відгуки</a></li>
+                            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Тестування</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__box">
+                    <div class="footer__box-image">
+                        <img src="img/google.svg" alt="">
+                        <img src="img/instagramm.svg" alt="">
+                        <img src="img/viber.svg" alt="">
+                        <img src="img/telegram.svg" alt="">
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="mailto: masaovcarenko99@gmail.com" target="blank" class="footer__email">masaovcarenko99@gmail.com</a>
+                        <a href="tel: +38 050 024 8353" class="footer__tel">+38 050 024 8353</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__border">
+                <div>&copy 2022 EasyEnglish</div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
