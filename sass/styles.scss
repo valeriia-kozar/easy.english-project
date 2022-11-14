@@ -639,10 +639,14 @@ a {
 
 .heart {
     position: relative;
-    height: 315px;
+    height: 200px;
     background-image: url(../img/heart.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 150px;
+    background-position-y: -15px;
     margin-top: 200px;
+
     @extend%width;
 
     &__container {
@@ -651,6 +655,13 @@ a {
         width: 970px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    &__image {
+        position: absolute;
+        left: 45%;
+        top: 30px;
     }
 
     &__title {
@@ -671,18 +682,16 @@ a {
         border-radius: 40px;
         border: 2px solid transparent;
         transition: .5s;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        color: #7A4AE6;
+        cursor: pointer;
     }
 
     &__btn:hover {
         background-color: transparent;
         border: 2px solid #7A4AE6;
-    }
-
-    &__btn a {
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 31px;
-        color: #7A4AE6;
     }
 }
 
@@ -729,15 +738,20 @@ a {
 
     &__image {
         transition: .5s;
+        outline: 2px solid #7a4ae6;
+        border-radius: 18px;
     }
 
     &__image:hover {
-        border: 2px solid #83F4BA;
+        outline: 2px solid #83F4BA;
     }
 }
 
 .form {
     margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @extend%width;
 
     &__title {
@@ -886,6 +900,13 @@ a {
         color: #000000;
         @extend%text-style;
     }
+}
+
+.copyright {
+    border-top: 1px solid #A8F7CF;
+    background: #83F4BA;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
 @keyframes lampLight {
