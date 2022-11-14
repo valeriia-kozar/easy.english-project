@@ -234,19 +234,64 @@ a {
         top: 118px;
         z-index: 2;
         transition: .5s;
+
+        &-container {
+            position: relative;
+        }
     }
 
-    &__girl:hover {
-        background-image: url(../img/backgroundHello.svg);
-        background-repeat: no-repeat;
-        background-position: center;
+    &__girl .hello-image {
         position: absolute;
-        z-index: 3;
+        top: 36%;
+        right: 90px;
+        opacity: 0;
+        transition: 0.5s;
     }
+
+    &__girl:hover .hello-image {
+        opacity: 1;
+    }
+
 
     &__lamp {
         position: absolute;
+        width: 100%;
         right: 100px;
+        display: flex;
+        justify-content: flex-end;
+
+        &-container {
+            position: relative;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: 387px;
+            width: 100%;
+        }
+    }
+
+    .background__lamp-container:hover .lamp-light {
+        animation-play-state: running;
+    }
+
+    .lamp-light {
+        animation: lampLight 0.5s forwards;
+        animation-play-state: paused;
+        background-color: rgba(122, 74, 230, 0.43);
+        clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+        height: 100%;
+
+        &-container {
+            top: 226px;
+            position: absolute;
+            height: 100%;
+            padding: 20px;
+            width: 100%;
+            filter: blur(50px);
+            max-width: 570px;
+            max-height: 387px;
+        }
     }
 }
 
@@ -298,7 +343,7 @@ a {
     transition: .5s;
     
     &:hover &__text {
-        display: block;
+        animation-play-state: running;
     }
 
     &__container {
@@ -323,6 +368,8 @@ a {
     }
 
     &__text {
+        animation: opacityAnimation 0.5s forwards;
+        animation-play-state: paused;
         max-width: 620px;
         font-style: italic;
         font-weight: 700;
@@ -332,8 +379,6 @@ a {
         position: relative;
         top: 46px;
         left: 415px;
-        display: none;
-        transition: .5s;
     }
 }
 
@@ -393,15 +438,15 @@ a {
 
     &__box-one,
     &__box-two {
-        width: 570px;
-        height: 930px;
-        border: 1px solid #000;
-        border-radius: 30px;
+        max-width: 570px;
+        width: 100%;
     }
 
     &__box-content {
-        width: 495px;
-        margin: auto;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #000;
+        border-radius: 30px;
     }
 
     &__title {
@@ -420,6 +465,7 @@ a {
 
     &__text {
         margin-top: 50px;
+        padding: 0 40px;
         @extend%border
     }
 
@@ -436,7 +482,7 @@ a {
 
     &__price {
         text-align: center;
-        padding: 90px 0;
+        padding: 90px 40px;
         @extend%border
     }
 
@@ -839,5 +885,25 @@ a {
         text-decoration: underline;
         color: #000000;
         @extend%text-style;
+    }
+}
+
+@keyframes lampLight {
+    from {
+        background-color: rgba(122, 74, 230, 0.43);
+    }
+
+    to {
+        background-color: rgba(122, 74, 230, 1);
+    }
+}
+
+@keyframes opacityAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
