@@ -211,17 +211,15 @@ a {
         border-radius: 50px;
         border: 2px solid transparent;
         transition: .5s;
-    }
-
-    &__btn:hover {
-        border: 2px solid #000;
-    }
-
-    &__btn-link {
+        cursor: pointer;
         font-weight: 700;
         font-size: 28px;
         line-height: 35px;
         color: #473C4B;
+    }
+
+    &__btn:hover {
+        border: 2px solid #000;
     }
 
     &__text-lesson {
@@ -234,21 +232,66 @@ a {
         position: absolute;
         right: 80px;
         top: 118px;
-        z-index: 100;
+        z-index: 2;
         transition: .5s;
+
+        &-container {
+            position: relative;
+        }
     }
 
-    &__girl:hover {
-        background-image: url(../img/backgroundHello.svg);
-        background-repeat: no-repeat;
-        background-position: center;
+    &__girl .hello-image {
         position: absolute;
-        z-index: 200;
+        top: 36%;
+        right: 90px;
+        opacity: 0;
+        transition: 0.5s;
     }
+
+    &__girl:hover .hello-image {
+        opacity: 1;
+    }
+
 
     &__lamp {
         position: absolute;
+        width: 100%;
         right: 100px;
+        display: flex;
+        justify-content: flex-end;
+
+        &-container {
+            position: relative;
+            max-width: 1000px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: 387px;
+            width: 100%;
+        }
+    }
+
+    .background__lamp-container:hover .lamp-light {
+        animation-play-state: running;
+    }
+
+    .lamp-light {
+        animation: lampLight 0.5s forwards;
+        animation-play-state: paused;
+        background-color: rgba(122, 74, 230, 0.43);
+        clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+        height: 100%;
+
+        &-container {
+            top: 226px;
+            position: absolute;
+            height: 100%;
+            padding: 20px;
+            width: 100%;
+            filter: blur(50px);
+            max-width: 570px;
+            max-height: 387px;
+        }
     }
 }
 
@@ -300,7 +343,7 @@ a {
     transition: .5s;
     
     &:hover &__text {
-        display: block;
+        animation-play-state: running;
     }
 
     &__container {
@@ -325,6 +368,8 @@ a {
     }
 
     &__text {
+        animation: opacityAnimation 0.5s forwards;
+        animation-play-state: paused;
         max-width: 620px;
         font-style: italic;
         font-weight: 700;
@@ -334,8 +379,6 @@ a {
         position: relative;
         top: 46px;
         left: 415px;
-        display: none;
-        transition: .5s;
     }
 }
 
@@ -395,15 +438,15 @@ a {
 
     &__box-one,
     &__box-two {
-        width: 570px;
-        height: 930px;
-        border: 1px solid #000;
-        border-radius: 30px;
+        max-width: 570px;
+        width: 100%;
     }
 
     &__box-content {
-        width: 495px;
-        margin: auto;
+        width: 100%;
+        overflow: hidden;
+        border: 1px solid #000;
+        border-radius: 30px;
     }
 
     &__title {
@@ -422,6 +465,7 @@ a {
 
     &__text {
         margin-top: 50px;
+        padding: 0 40px;
         @extend%border
     }
 
@@ -438,7 +482,7 @@ a {
 
     &__price {
         text-align: center;
-        padding: 90px 0;
+        padding: 90px 40px;
         @extend%border
     }
 
@@ -595,10 +639,14 @@ a {
 
 .heart {
     position: relative;
-    height: 315px;
+    height: 200px;
     background-image: url(../img/heart.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 150px;
+    background-position-y: -15px;
     margin-top: 200px;
+
     @extend%width;
 
     &__container {
@@ -607,6 +655,13 @@ a {
         width: 970px;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    &__image {
+        position: absolute;
+        left: 45%;
+        top: 30px;
     }
 
     &__title {
@@ -627,18 +682,16 @@ a {
         border-radius: 40px;
         border: 2px solid transparent;
         transition: .5s;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 31px;
+        color: #7A4AE6;
+        cursor: pointer;
     }
 
     &__btn:hover {
         background-color: transparent;
         border: 2px solid #7A4AE6;
-    }
-
-    &__btn a {
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 31px;
-        color: #7A4AE6;
     }
 }
 
@@ -685,15 +738,20 @@ a {
 
     &__image {
         transition: .5s;
+        outline: 2px solid #7a4ae6;
+        border-radius: 18px;
     }
 
     &__image:hover {
-        border: 2px solid #83F4BA;
+        outline: 2px solid #83F4BA;
     }
 }
 
 .form {
     margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     @extend%width;
 
     &__title {
@@ -841,5 +899,32 @@ a {
         text-decoration: underline;
         color: #000000;
         @extend%text-style;
+    }
+}
+
+.copyright {
+    border-top: 1px solid #A8F7CF;
+    background: #83F4BA;
+    color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+@keyframes lampLight {
+    from {
+        background-color: rgba(122, 74, 230, 0.43);
+    }
+
+    to {
+        background-color: rgba(122, 74, 230, 1);
+    }
+}
+
+@keyframes opacityAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }
