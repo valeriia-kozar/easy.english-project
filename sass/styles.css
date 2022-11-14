@@ -232,6 +232,14 @@ a {
 .background .background__lamp-container:hover .lamp-light {
   animation-play-state: running;
 }
+.background .background__lamp-container:hover .lamp {
+  animation-play-state: running;
+}
+.background .lamp {
+  animation: lamp 0.5s forwards;
+  fill: #fff;
+  animation-play-state: paused;
+}
 .background .lamp-light {
   animation: lampLight 0.5s forwards;
   animation-play-state: paused;
@@ -761,6 +769,14 @@ a {
   }
   to {
     background-color: rgb(122, 74, 230);
+  }
+}
+@keyframes lamp {
+  from {
+    fill: #fff;
+  }
+  to {
+    fill: rgb(122, 74, 230);
   }
 }
 @keyframes opacityAnimation {
