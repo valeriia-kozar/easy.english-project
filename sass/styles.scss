@@ -65,15 +65,74 @@ a {
         flex-direction: row;
     }
 
+    &__nav-item {
+        position: relative;
+    }
+
+    &__nav-item:hover &__nav-dropdown {
+        display: block;
+        background: #ffffff;
+    }
+
     &__nav-link {
         margin-right: 25px;
         font-weight: 500;
-        @extend%text-style
+        @extend%text-style;
+    }
+
+    &__nav-img {
+        position: absolute;
+        top: 4px;
+        right: 7px;
     }
 
     &__nav-dropdown {
         position: absolute;
+        left: 50%;
+        margin-left: -120px;
         display: none;
+        padding: 40px;
+        margin-top: 38px;
+        border-radius: 20px;
+    }
+
+    &__nav-dropdown-tel {
+        margin-bottom: 30px;
+    }
+
+    &__nav-dropdown h2 {
+        color: #7A4AE6;
+        font-weight: 500;
+        margin-bottom: 15px;
+        padding-left: 40px;
+        @extend%text-style;
+    }
+
+    &__nav-dropdown-img, &__nav-dropdown-arrow {
+        position: absolute;
+    }
+
+    &__nav-dropdown-arrow {
+        top: -22px;
+        left: 135px;
+    }
+
+    &__nav-dropdown-arrow img {
+        width: 60px;
+        height: 35px;
+    }
+
+    &__nav-dropdown-link {
+        font-size: 18px;
+        line-height: 23px;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+
+    &__nav-dropdown-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
     }
 
     &__btn {
@@ -82,11 +141,17 @@ a {
         border: 3px solid #83F4BA;
         border-radius: 25px;
         background: transparent;
+        transition: .5s;
+        margin-left: 12px;
+    }
+
+    &__btn:hover {
+        background-color: #83F4BA;
     }
 
     &__btn-text {
         font-weight: 500;
-        @extend%text-style
+        @extend%text-style;
     }
 
     .lang {
@@ -114,7 +179,7 @@ a {
 
     &__container {
         display: flex;
-        @extend%width
+        @extend%width;
     }
 
     &__content {
@@ -144,7 +209,12 @@ a {
         background: #83F4BA;
         box-shadow: 7px 8px 30px rgba(131, 244, 186, 0.5);
         border-radius: 50px;
-        border: none;
+        border: 2px solid transparent;
+        transition: .5s;
+    }
+
+    &__btn:hover {
+        border: 2px solid #000;
     }
 
     &__btn-link {
@@ -157,13 +227,28 @@ a {
     &__text-lesson {
         color: #D9D9D9;
         padding-top: 20px;
-        @extend%text-style
+        @extend%text-style;
     }
 
     &__girl {
         position: absolute;
         right: 80px;
         top: 118px;
+        z-index: 100;
+        transition: .5s;
+    }
+
+    &__girl:hover {
+        background-image: url(../img/backgroundHello.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        z-index: 200;
+    }
+
+    &__lamp {
+        position: absolute;
+        right: 100px;
     }
 }
 
@@ -212,6 +297,11 @@ a {
     height: 180px;
     margin: 115px 0;
     position: relative;
+    transition: .5s;
+    
+    &:hover &__text {
+        display: block;
+    }
 
     &__container {
         width: 1300px;
@@ -225,12 +315,27 @@ a {
         background-size: 1000px;
         background-position: right center;
         clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
+        transition: .5s;
     }
 
     &__img {
         position: absolute;
         left: 110px;
         top: 68px;
+    }
+
+    &__text {
+        max-width: 620px;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        color: #473C4B;
+        position: relative;
+        top: 46px;
+        left: 415px;
+        display: none;
+        transition: .5s;
     }
 }
 
@@ -249,8 +354,7 @@ a {
     &__pin,
     &__thread,
     &__pin-two,
-    &__thread-two,
-    &__boom {
+    &__thread-two {
         position: absolute;
     }
 
@@ -272,11 +376,6 @@ a {
 
     &__thread-two {
         top: 68px;
-    }
-
-    &__boom {
-        left: 430px;
-        top: 205px;
     }
 
     &__container {
@@ -353,6 +452,15 @@ a {
         padding: 30px 0;
         text-align: center;
         background: #83F4BA;
+        transition: .5s;
+    }
+
+    &__link:hover {
+        background-color: transparent;
+    }
+
+    &__link:hover a {
+        color: #000;
     }
 
     &__link a {
@@ -360,6 +468,7 @@ a {
         font-size: 30px;
         line-height: 45px;
         color: #7A4AE6;
+        transition: .5s;
     }
 }
 
@@ -516,8 +625,15 @@ a {
         background: #83F4BA;
         box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
         border-radius: 40px;
-        border: none;
+        border: 2px solid transparent;
+        transition: .5s;
     }
+
+    &__btn:hover {
+        background-color: transparent;
+        border: 2px solid #7A4AE6;
+    }
+
     &__btn a {
         font-weight: 700;
         font-size: 25px;
@@ -565,6 +681,14 @@ a {
         position: absolute;
         right: -100px;
         top: 360px;
+    }
+
+    &__image {
+        transition: .5s;
+    }
+
+    &__image:hover {
+        border: 2px solid #83F4BA;
     }
 }
 
@@ -652,6 +776,11 @@ a {
         filter: drop-shadow(7px 8px 30px rgba(131, 244, 186, 0.5));
         border-radius: 50px;
         background-color: transparent;
+        transition: .5s;
+    }
+
+    &__btn:hover {
+        background-color: #83F4BA;
     }
 
     &__btn a {

@@ -1,4 +1,4 @@
-.footer__tel, .footer__email, .footer__nav-link, .easy__content-text, .background__text-lesson, .header__btn-text, .header__nav-link {
+.footer__tel, .footer__email, .footer__nav-link, .easy__content-text, .background__text-lesson, .header__btn-text, .header__nav-dropdown h2, .header__nav-link {
   font-size: 20px;
   line-height: 25px;
 }
@@ -59,13 +59,62 @@ a {
   display: flex;
   flex-direction: row;
 }
+.header__nav-item {
+  position: relative;
+}
+.header__nav-item:hover .header__nav-dropdown {
+  display: block;
+  background: #ffffff;
+}
 .header__nav-link {
   margin-right: 25px;
   font-weight: 500;
 }
+.header__nav-img {
+  position: absolute;
+  top: 4px;
+  right: 7px;
+}
 .header__nav-dropdown {
   position: absolute;
+  left: 50%;
+  margin-left: -120px;
   display: none;
+  padding: 40px;
+  margin-top: 38px;
+  border-radius: 20px;
+}
+.header__nav-dropdown-tel {
+  margin-bottom: 30px;
+}
+.header__nav-dropdown h2 {
+  color: #7A4AE6;
+  font-weight: 500;
+  margin-bottom: 15px;
+  padding-left: 40px;
+}
+.header__nav-dropdown-img, .header__nav-dropdown-arrow {
+  position: absolute;
+}
+.header__nav-dropdown-arrow {
+  top: -22px;
+  left: 135px;
+}
+.header__nav-dropdown-arrow img {
+  width: 60px;
+  height: 35px;
+}
+.header__nav-dropdown-link {
+  font-size: 18px;
+  line-height: 23px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #000000;
+}
+.header__nav-dropdown-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 .header__btn {
   width: 220px;
@@ -73,6 +122,11 @@ a {
   border: 3px solid #83F4BA;
   border-radius: 25px;
   background: transparent;
+  transition: 0.5s;
+  margin-left: 12px;
+}
+.header__btn:hover {
+  background-color: #83F4BA;
 }
 .header__btn-text {
   font-weight: 500;
@@ -125,7 +179,11 @@ a {
   background: #83F4BA;
   box-shadow: 7px 8px 30px rgba(131, 244, 186, 0.5);
   border-radius: 50px;
-  border: none;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+.background__btn:hover {
+  border: 2px solid #000;
 }
 .background__btn-link {
   font-weight: 700;
@@ -141,6 +199,19 @@ a {
   position: absolute;
   right: 80px;
   top: 118px;
+  z-index: 100;
+  transition: 0.5s;
+}
+.background__girl:hover {
+  background-image: url(../img/backgroundHello.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  z-index: 200;
+}
+.background__lamp {
+  position: absolute;
+  right: 100px;
 }
 
 .easy {
@@ -181,6 +252,10 @@ a {
   height: 180px;
   margin: 115px 0;
   position: relative;
+  transition: 0.5s;
+}
+.banner:hover .banner__text {
+  display: block;
 }
 .banner__container {
   width: 1300px;
@@ -195,11 +270,25 @@ a {
   background-position: right center;
   -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
           clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
+  transition: 0.5s;
 }
 .banner__img {
   position: absolute;
   left: 110px;
   top: 68px;
+}
+.banner__text {
+  max-width: 620px;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #473C4B;
+  position: relative;
+  top: 46px;
+  left: 415px;
+  display: none;
+  transition: 0.5s;
 }
 
 .price {
@@ -212,7 +301,7 @@ a {
   bottom: 283px;
   left: 25px;
 }
-.price__pin, .price__thread, .price__pin-two, .price__thread-two, .price__boom {
+.price__pin, .price__thread, .price__pin-two, .price__thread-two {
   position: absolute;
 }
 .price__pin {
@@ -230,10 +319,6 @@ a {
 }
 .price__thread-two {
   top: 68px;
-}
-.price__boom {
-  left: 430px;
-  top: 205px;
 }
 .price__container {
   height: 1020px;
@@ -293,12 +378,20 @@ a {
   padding: 30px 0;
   text-align: center;
   background: #83F4BA;
+  transition: 0.5s;
+}
+.price__link:hover {
+  background-color: transparent;
+}
+.price__link:hover a {
+  color: #000;
 }
 .price__link a {
   font-weight: 600;
   font-size: 30px;
   line-height: 45px;
   color: #7A4AE6;
+  transition: 0.5s;
 }
 
 .course__container {
@@ -424,7 +517,12 @@ a {
   background: #83F4BA;
   box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
   border-radius: 40px;
-  border: none;
+  border: 2px solid transparent;
+  transition: 0.5s;
+}
+.heart__btn:hover {
+  background-color: transparent;
+  border: 2px solid #7A4AE6;
 }
 .heart__btn a {
   font-weight: 700;
@@ -466,6 +564,12 @@ a {
   position: absolute;
   right: -100px;
   top: 360px;
+}
+.feedback__image {
+  transition: 0.5s;
+}
+.feedback__image:hover {
+  border: 2px solid #83F4BA;
 }
 
 .form {
@@ -551,6 +655,10 @@ a {
   filter: drop-shadow(7px 8px 30px rgba(131, 244, 186, 0.5));
   border-radius: 50px;
   background-color: transparent;
+  transition: 0.5s;
+}
+.form__btn:hover {
+  background-color: #83F4BA;
 }
 .form__btn a {
   font-weight: 500;

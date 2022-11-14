@@ -12,26 +12,30 @@
     <div id="container" class="container">
         <header class="header">
             <div class="head">
-                <img src="img/logo.png" alt="logo">
+                <a href=""><img src="img/logoHead.svg" alt="logo"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-items">
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Про нас</a></li>
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Курси</a></li>
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Відгуки</a></li>
                         <li class="header__nav-item">
-                            <a href="#" class="header__nav-link">Контакти </a>
+                            <a href="#" class="header__nav-link">Контакти</a>
+                            <div class="header__nav-img"><img src="img/arrowDown.svg" alt=""></div>
                             <ul class="header__nav-dropdown">
-                                <li>
+                                <div class="header__nav-dropdown-arrow"><img src="img/arrowTop.svg" alt=""></div>
+                                <li class="header__nav-dropdown-tel">
+                                    <div class="header__nav-dropdown-img"><img src="img/tel.svg" alt=""></div>
                                     <h2>Подзвонити</h2>
-                                    <a href="tel: +38 050 024 8353">+38 050 024 8353</a>
+                                    <a class="header__nav-dropdown-link" href="tel: +38 050 024 8353">+38 050 024 8353</a>
                                 </li>
-                                <li>
+                                <li class="header__nav-dropdown-text">
+                                    <div class="header__nav-dropdown-img"><img src="img/pen.svg" alt=""></div>
                                     <h2>Написати</h2>
-                                    <div>
-                                        <a href="mailto: masaovcarenko99@gmail.com" target="blank">masaovcarenko99@gmail.com</a>
-                                        <a href="#" target="blank">Viber</a>
-                                        <a href="#" target="blank">Telegram</a>
-                                        <a href="#" target="blank">Instagram</a>
+                                    <div class="header__nav-dropdown-contacts">
+                                        <a class="header__nav-dropdown-link" href="mailto: masaovcarenko99@gmail.com" target="blank">masaovcarenko99@gmail.com</a>
+                                        <a class="header__nav-dropdown-link" href="#" target="blank">Viber</a>
+                                        <a class="header__nav-dropdown-link" href="#" target="blank">Telegram</a>
+                                        <a class="header__nav-dropdown-link" href="#" target="blank">Instagram</a>
                                     </div>
                                 </li>
                             </ul>
@@ -39,7 +43,6 @@
                     </ul>
                     <button class="header__btn"><a href="#" class="header__btn-text">Тестування рівня</a></button>
                     <select id="lang" class="lang">
-                        <option></option>
                         <option value="/ua/">Українська</option>
                         <option value="/ru/">Російська</option>
                     </select>
@@ -56,14 +59,17 @@
                         <div class="background__text-lesson">45 хв онлайн з викладачем школи EasyEnglish. Покажемо як проходять заняття та визначимо план навчання.</div>
                     </div>
                     <div class="background__girl">
-                        <img src="img/background-girl.png" alt="image of girl"/>
+                        <img src="img/backgroundGirl.svg" alt="image of girl"/>
+                    </div>
+                    <div class="background__lamp">
+                        <img src="img/lampOn.svg" alt="image of lamp">
                     </div>
                 </div>
             </section>
             <section class="easy">
                 <div class="easy__container">
                     <div class="easy__girl">
-                        <img src="img/easy-girl.png" alt="image of girl">
+                        <img src="img/easyGirl.svg" alt="image of girl">
                     </div>
                     <div class="easy__content">
                         <h3 class="easy__content-title">З нами English - це реально Easy!</h3>
@@ -73,6 +79,7 @@
             </section>
             <div class="banner">
                 <div class="banner__container">
+                    <div class="banner__text">Визначайся з курсом і let’s go!</div>
                     <div class="banner__img"><img src="img/Pencil.png" alt="banner with pencil"></div>
                 </div>
             </div> 
@@ -82,7 +89,6 @@
                         <div class="price__decor">
                             <div class="price__pin"><img src="img/Pin.png" alt="pin"></div>
                             <div class="price__thread"><img src="img/rectangle.png" alt="thread"></div>
-                            <div class="price__boom"><img src="img/boom.png" alt=""></div>
                         </div>
                         <div class="price__box-content">
                            <h3 class="price__title">Індивідуальні <span>EASY</span> заняття </h3> 
@@ -93,6 +99,7 @@
                                     <li class="price__lesson">позаурочне спілкування з викладачем;</li>
                                     <li class="price__lesson">індивідуальний план навчання;</li>
                                     <li class="price__lesson">доступ до всіх занять, слів та програми.</li>
+                                    <li class="price__lesson">усі рівні (A1-C1).</li>
                                 </ul>
                             </div>
                            <div class="price__price">299 грн / урок (60 хв)</div>
@@ -103,7 +110,6 @@
                         <div class="price__decor">
                             <div class="price__pin-two"><img src="img/Pin.png" alt="pin"></div>
                             <div class="price__thread-two"><img src="img/rectangle.png" alt="thread"></div>
-                            <div class="price__boom"><img src="img/boom.png" alt=""></div>
                         </div>
                         <div class="price__box-content">
                             <h3 class="price__title">Групові <span>EASY</span> заняття </h3> 
@@ -114,6 +120,7 @@
                                     <li class="price__lesson">інтерактивна платформа з заняттями, словником і програмою;</li>
                                     <li class="price__lesson">2 заняття на тиждень;</li>
                                     <li class="price__lesson">1 заняття - 60 хв.</li>
+                                    <li class="price__lesson">усі рівні (A1-C1).</li>
                                 </ul>
                             </div>
                            <div class="price__level-list">
@@ -259,7 +266,7 @@
         <footer class="footer">
             <div class="footer__container">
                 <div class="footer__box">
-                    <div class="footer__logo"><img src="img/logoFooter.svg" alt=""></div>
+                    <a class="footer__logo"><img src="img/logoFooter.svg" alt=""></a>
                     <nav class="footer__nav">
                         <ul class="footer__nav-items">
                             <li class="footer__nav-item"><a href="#" class="footer__nav-link">Про нас</a></li>
@@ -271,10 +278,10 @@
                 </div>
                 <div class="footer__box">
                     <div class="footer__box-image">
-                        <img src="img/google.svg" alt="">
-                        <img src="img/instagramm.svg" alt="">
-                        <img src="img/viber.svg" alt="">
-                        <img src="img/telegram.svg" alt="">
+                        <a href=""><img src="img/google.svg" alt=""></a>
+                        <a href=""><img src="img/instagramm.svg" alt=""></a>
+                        <a href=""><img src="img/viber.svg" alt=""></a>
+                        <a href=""><img src="img/telegram.svg" alt=""></a>
                     </div>
                     <div class="footer__contacts">
                         <a href="mailto: masaovcarenko99@gmail.com" target="blank" class="footer__email">masaovcarenko99@gmail.com</a>
