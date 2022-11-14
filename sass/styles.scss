@@ -211,17 +211,15 @@ a {
         border-radius: 50px;
         border: 2px solid transparent;
         transition: .5s;
-    }
-
-    &__btn:hover {
-        border: 2px solid #000;
-    }
-
-    &__btn-link {
+        cursor: pointer;
         font-weight: 700;
         font-size: 28px;
         line-height: 35px;
         color: #473C4B;
+    }
+
+    &__btn:hover {
+        border: 2px solid #000;
     }
 
     &__text-lesson {
@@ -234,7 +232,7 @@ a {
         position: absolute;
         right: 80px;
         top: 118px;
-        z-index: 100;
+        z-index: 2;
         transition: .5s;
     }
 
@@ -243,7 +241,7 @@ a {
         background-repeat: no-repeat;
         background-position: center;
         position: absolute;
-        z-index: 200;
+        z-index: 3;
     }
 
     &__lamp {
