@@ -848,7 +848,10 @@ a {
     opacity: 1;
   }
 }
-.feedback__image-bg:hover .thumb .comment {
+.feedback__image-bg:hover .thumb,
+.feedback__image-bg:hover .star,
+.feedback__image-bg:hover .comment,
+.feedback__image-bg:hover .heart {
   -webkit-animation-play-state: running;
           animation-play-state: running;
 }
