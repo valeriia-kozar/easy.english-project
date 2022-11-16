@@ -1,4 +1,4 @@
-.footer__tel, .footer__email, .footer__nav-link, .easy__content-text, .background__text-lesson, .header__btn-text, .header__nav-dropdown h2, .header__nav-link {
+.footer__tel, .footer__email, .footer__nav-link, .background__text-lesson, .header__btn-text, .header__nav-dropdown h2, .header__nav-link {
   font-size: 20px;
   line-height: 25px;
 }
@@ -107,7 +107,8 @@ a {
 .header__nav-dropdown-link {
   font-size: 18px;
   line-height: 23px;
-  text-decoration-line: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
   color: #000000;
 }
 .header__nav-dropdown-contacts {
@@ -139,6 +140,14 @@ a {
   margin-left: 8px;
 }
 
+.contact-link {
+  transition: 0.5s;
+}
+
+.contact-link:hover {
+  color: #7A4AE6;
+}
+
 .main {
   width: 1190px;
   margin: auto;
@@ -147,7 +156,7 @@ a {
 
 .background {
   width: 100%;
-  height: 870px;
+  height: 800px;
   background-color: #7A4AE6;
   padding-top: 200px;
   position: relative;
@@ -230,21 +239,28 @@ a {
   width: 100%;
 }
 .background .background__lamp-container:hover .lamp-light {
-  animation-play-state: running;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 .background .background__lamp-container:hover .lamp {
-  animation-play-state: running;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 .background .lamp {
-  animation: lamp 0.5s forwards;
+  -webkit-animation: lamp 0.5s forwards;
+          animation: lamp 0.5s forwards;
   fill: #fff;
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 .background .lamp-light {
-  animation: lampLight 0.5s forwards;
-  animation-play-state: paused;
+  -webkit-animation: lampLight 0.5s forwards;
+          animation: lampLight 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
   background-color: rgba(122, 74, 230, 0.43);
-  clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+  -webkit-clip-path: polygon(50% 0, 10% 100%, 90% 100%);
+          clip-path: polygon(50% 0, 10% 100%, 90% 100%);
   height: 100%;
 }
 .background .lamp-light-container {
@@ -253,7 +269,7 @@ a {
   height: 100%;
   padding: 20px;
   width: 100%;
-  filter: blur(50px);
+  filter: blur(70px);
   max-width: 570px;
   max-height: 387px;
 }
@@ -290,6 +306,8 @@ a {
 }
 .easy__content-text {
   color: #473C4B;
+  font-size: 30px;
+  line-height: 38px;
 }
 
 .banner {
@@ -299,7 +317,8 @@ a {
   transition: 0.5s;
 }
 .banner:hover .banner__text {
-  animation-play-state: running;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
 }
 .banner__container {
   width: 1300px;
@@ -312,7 +331,8 @@ a {
   background-repeat: no-repeat;
   background-size: 1000px;
   background-position: right center;
-  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
+  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
+          clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
   transition: 0.5s;
 }
 .banner__img {
@@ -321,8 +341,10 @@ a {
   top: 68px;
 }
 .banner__text {
-  animation: opacityAnimation 0.5s forwards;
-  animation-play-state: paused;
+  -webkit-animation: opacityAnimation 0.5s forwards;
+          animation: opacityAnimation 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
   max-width: 620px;
   font-style: italic;
   font-weight: 700;
@@ -617,6 +639,10 @@ a {
   right: -100px;
   top: 360px;
 }
+.feedback__image-bg:hover .thumb {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
 .feedback__image {
   transition: 0.5s;
   outline: 2px solid #7a4ae6;
@@ -688,13 +714,23 @@ a {
   margin-top: 10px;
   font-size: 20px;
 }
+.form__input::-moz-placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(46, 53, 58, 0.3);
+}
+.form__input:-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(46, 53, 58, 0.3);
+}
 .form__input::placeholder {
   font-size: 20px;
   line-height: 25px;
   color: rgba(46, 53, 58, 0.3);
 }
 .form__input:focus {
-  border: none;
+  outline: none;
 }
 .form__btn {
   height: 65px;
@@ -763,12 +799,29 @@ a {
   text-align: center;
 }
 
+@-webkit-keyframes lampLight {
+  from {
+    background-color: rgba(122, 74, 230, 0.43);
+  }
+  to {
+    background-color: rgb(122, 74, 230);
+  }
+}
+
 @keyframes lampLight {
   from {
     background-color: rgba(122, 74, 230, 0.43);
   }
   to {
     background-color: rgb(122, 74, 230);
+  }
+}
+@-webkit-keyframes lamp {
+  from {
+    fill: #fff;
+  }
+  to {
+    fill: rgb(122, 74, 230);
   }
 }
 @keyframes lamp {
@@ -779,6 +832,14 @@ a {
     fill: rgb(122, 74, 230);
   }
 }
+@-webkit-keyframes opacityAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @keyframes opacityAnimation {
   from {
     opacity: 0;
@@ -787,5 +848,342 @@ a {
     opacity: 1;
   }
 }
+.feedback__image-bg:hover .thumb .comment {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
 
-/*# sourceMappingURL=styles.css.map */
+.comment {
+  -webkit-animation: comment 0.5s forwards;
+          animation: comment 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.comment-one {
+  -webkit-animation: comment-one 0.5s forwards;
+          animation: comment-one 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.comment-two {
+  -webkit-animation: comment-two 0.5s forwards;
+          animation: comment-two 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.comment-three {
+  -webkit-animation: comment-three 0.5s forwards;
+          animation: comment-three 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.comment-four {
+  -webkit-animation: comment-four 0.5s forwards;
+          animation: comment-four 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.comment-five {
+  -webkit-animation: comment-five 0.5s forwards;
+          animation: comment-five 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.comment-six {
+  -webkit-animation: comment-six 0.5s forwards;
+          animation: comment-six 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.thumb {
+  -webkit-animation: thumb 0.5s forwards;
+          animation: thumb 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.thumb-one {
+  -webkit-animation: thumb-one 0.5s forwards;
+          animation: thumb-one 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.thumb-two {
+  -webkit-animation: thumb-two 0.5s forwards;
+          animation: thumb-two 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.thumb-three {
+  -webkit-animation: thumb-three 0.5s forwards;
+          animation: thumb-three 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.thumb-four {
+  -webkit-animation: thumb-four 0.5s forwards;
+          animation: thumb-four 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.thumb-five {
+  -webkit-animation: thumb-five 0.5s forwards;
+          animation: thumb-five 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.heart {
+  -webkit-animation: heart 0.5s forwards;
+          animation: heart 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.star {
+  -webkit-animation: star 0.5s forwards;
+          animation: star 0.5s forwards;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes star {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #7A4AE6;
+    opacity: 0.3;
+  }
+}
+
+@keyframes star {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #7A4AE6;
+    opacity: 0.3;
+  }
+}
+@-webkit-keyframes heart {
+  from {
+    fill: #7A4AE6;
+  }
+  to {
+    fill: #ff0000;
+  }
+}
+@keyframes heart {
+  from {
+    fill: #7A4AE6;
+  }
+  to {
+    fill: #ff0000;
+  }
+}
+@-webkit-keyframes thumb {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes thumb {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes thumb-one {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50px, 40px);
+    transform: scale(1.2);
+  }
+}
+@keyframes thumb-one {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(50px, 40px);
+    transform: scale(1.2);
+  }
+}
+@-webkit-keyframes thumb-two {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(40px, -30px);
+    transform: scale(1.1);
+  }
+}
+@keyframes thumb-two {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(40px, -30px);
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes thumb-three {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50px, 40px);
+  }
+}
+@keyframes thumb-three {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-50px, 40px);
+  }
+}
+@-webkit-keyframes thumb-four {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-40px, -20px);
+  }
+}
+@keyframes thumb-four {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-40px, -20px);
+  }
+}
+@-webkit-keyframes thumb-five {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-55px, 20px);
+  }
+}
+@keyframes thumb-five {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-55px, 20px);
+  }
+}
+@-webkit-keyframes comment {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes comment {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes comment-one {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes comment-one {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes comment-two {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes comment-two {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes comment-three {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@keyframes comment-three {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+@-webkit-keyframes comment-four {
+  from {
+    transform: translate(0, 0);
+  }
+}
+@keyframes comment-four {
+  from {
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes comment-five {
+  from {
+    transform: translate(0, 0);
+  }
+}
+@keyframes comment-five {
+  from {
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes comment-six {
+  from {
+    transform: translate(0, 0);
+  }
+}
+@keyframes comment-six {
+  from {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=styles.css.map */
