@@ -12,25 +12,6 @@
   border-width: 570px;
   border-bottom: 1px solid #000; }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-body {
-  font-family: 'Geometria', serif;
-  color: white; }
-
-ul,
-li,
-ol {
-  list-style: none; }
-
-a {
-  text-decoration: none;
-  color: #fff;
-  cursor: pointer; }
-
 .header {
   position: absolute;
   z-index: 10;
@@ -721,7 +702,7 @@ a {
     fill: transparent; }
   to {
     fill: #7A4AE6;
-    opacity: .3; } }
+    opacity: .7; } }
 @keyframes heart {
   from {
     fill: #7A4AE6; }
@@ -759,34 +740,5 @@ a {
     transform: translate(0, 0); }
   to {
     transform: translate(-55px, 20px); } }
-@keyframes comment {
-  from {
-    transform: translate(0, 0); }
-  to {
-    transform: scale(2); } }
-@keyframes comment-one {
-  from {
-    transform: scale(1); }
-  to {
-    transform: scale(2); } }
-@keyframes comment-two {
-  from {
-    transform: scale(1); }
-  to {
-    transform: scale(2); } }
-@keyframes comment-three {
-  from {
-    transform: translate(0, 0); }
-  to {
-    transform: scale(2); } }
-@keyframes comment-four {
-  from {
-    transform: translate(0, 0); } }
-@keyframes comment-five {
-  from {
-    transform: translate(0, 0); } }
-@keyframes comment-six {
-  from {
-    transform: translate(0, 0); } }
 
 /*# sourceMappingURL=styles.css.map */
