@@ -1,3 +1,5 @@
+@import "variables";
+
 %text-style {
     font-size: 20px;
     line-height: 25px;
@@ -39,11 +41,11 @@
         font-weight: 500;
         font-size: 25px;
         line-height: 40px;
-        color: #473C4B;
+        color: $main-brown;
     }
 
     .text {
-        color: #473C4B;
+        color: $main-brown;
         font-size: 25px;
         line-height: 30px;
         margin: 40px 0 20px 0;
@@ -54,17 +56,17 @@
         font-weight: 500;
         font-size: 30px;
         line-height: 38px;
-        color: #473C4B;
+        color: $main-brown;
     }
 
     .btn {
         width: 215px;
         height: 50px;
-        background: #83F4BA;
+        background: $main-green;
         border-radius: 50px;
         border: none;
         font-weight: 500;
-        color: #473C4B;
+        color: $main-brown;
         @extend%text-style;
         margin-top: 40px;
     }

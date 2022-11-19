@@ -1,3 +1,5 @@
+@import "variables";
+
 %text-style {
     font-size: 20px;
     line-height: 25px;
@@ -24,7 +26,7 @@
         font-weight: 500;
         font-size: 25px;
         line-height: 40px;
-        color: #473C4B;
+        color: $main-brown;
         margin-bottom: 60px;
     }
 
