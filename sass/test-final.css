@@ -1,0 +1,53 @@
+.final .btn {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.final .container {
+  width: 1190px;
+  margin: auto;
+}
+
+.final {
+  color: #000;
+  margin: 50px 0 100px;
+}
+.final .container {
+  display: flex;
+  height: 580px;
+  border: 1px solid #000;
+  position: relative;
+  padding: 45px 40px;
+  justify-content: space-between;
+}
+.final .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.final .img {
+  position: relative;
+  bottom: 4px;
+  left: -20px;
+}
+.final .title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  color: #473C4B;
+}
+.final .text {
+  color: #473C4B;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 20px 0 60px 0;
+}
+.final .btn {
+  width: 215px;
+  height: 50px;
+  background: #83F4BA;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  color: #473C4B;
+}/*# sourceMappingURL=test-final.css.map */
