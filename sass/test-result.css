@@ -1,0 +1,61 @@
+.result .btn {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.result .container {
+  width: 1190px;
+  margin: auto;
+}
+
+.result {
+  color: #000;
+  margin: 50px 0 100px;
+}
+.result .container {
+  display: flex;
+  height: 580px;
+  border: 1px solid #000;
+  position: relative;
+  padding: 45px 40px;
+  justify-content: space-between;
+}
+.result .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.result .img {
+  position: relative;
+  bottom: 4px;
+  left: -20px;
+}
+.result .title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 40px;
+  color: #473C4B;
+}
+.result .text {
+  color: #473C4B;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 40px 0 20px 0;
+}
+.result .level {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #473C4B;
+}
+.result .btn {
+  width: 215px;
+  height: 50px;
+  background: #83F4BA;
+  border-radius: 50px;
+  border: none;
+  font-weight: 500;
+  color: #473C4B;
+  margin-top: 40px;
+}/*# sourceMappingURL=test-result.css.map */

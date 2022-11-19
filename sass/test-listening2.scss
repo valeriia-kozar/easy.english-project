@@ -1,0 +1,35 @@
+%text-style {
+    font-size: 20px;
+    line-height: 25px;
+}
+  
+%width {
+    width: 1190px;
+    margin: auto;
+}
+
+.listening {
+    color: #000;
+    margin: 40px 0 80px 0;
+  
+    &__container {
+      height: 580px;
+      @extend %width;
+      border: 1px solid #000;
+      position: relative;
+      padding: 60px 110px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 40px;
+        color: #473C4B;
+        margin-bottom: 60px;
+    }
+
+    &__video {
+        text-align: center;
+    }
+}  
+

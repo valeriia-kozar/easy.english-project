@@ -1,65 +1,67 @@
-.grammar__text {
+.listening__text {
   font-size: 20px;
   line-height: 25px;
 }
 
-.grammar__container {
+.listening__container {
   width: 1190px;
   margin: auto;
 }
 
-.grammar {
+.listening {
   color: #000;
   margin: 50px 0 100px;
 }
-.grammar__container {
+.listening__container {
   display: flex;
   height: 580px;
   border: 1px solid #000;
   position: relative;
 }
-.grammar__form {
+.listening__form {
   padding-left: 40px;
 }
-.grammar__form img {
+.listening__form img {
   position: absolute;
   left: 100px;
 }
-.grammar__number {
+.listening__number {
   font-weight: 500;
   font-size: 15px;
   color: #83F4BA;
   position: absolute;
   left: 108px;
 }
-.grammar__title {
+.listening__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 150%;
   color: #83F4BA;
   margin-bottom: 55px;
 }
-.grammar__text {
+.listening__text {
   margin-bottom: 25px;
 }
-.grammar__sections {
+.listening__sections {
   padding: 100px;
+  position: relative;
+  z-index: 5;
 }
-.grammar__img-bg, .grammar__img-girl {
+.listening__img-bg, .listening__img-girl {
   position: absolute;
   right: -60px;
   bottom: -20px;
 }
-.grammar__radio {
+.listening__radio {
   background: rgba(122, 74, 230, 0.5);
   border: 1px solid rgba(122, 74, 230, 0.5);
   border-radius: 3px;
-  width: 260px;
-  height: 40px;
+  width: 500px;
+  height: 60px;
   padding-left: 45px;
   padding-top: 8px;
 }
-.grammar__input {
+.listening__input {
   background: rgba(122, 74, 230, 0.5);
   border: 1px solid rgba(122, 74, 230, 0.5);
   border-radius: 3px;
@@ -70,20 +72,20 @@
   z-index: 5;
   cursor: pointer;
 }
-.grammar__input:checked + .grammar__label {
+.listening__input:checked + .listening__label {
   background-color: #7A4AE6;
 }
-.grammar__input:checked .grammar__letter {
+.listening__input:checked .listening__letter {
   background-color: #83F4BA;
 }
-.grammar__label {
+.listening__label {
   display: flex;
   margin-bottom: 5px;
 }
-.grammar__label:nth-child(8) {
+.listening__label:nth-child(6) {
   margin-bottom: 20px;
 }
-.grammar__label p {
+.listening__label p {
   position: absolute;
   color: #fff;
   padding: 2px 0 0 5px;
@@ -94,7 +96,7 @@
   width: 25px;
   height: 25px;
 }
-.grammar__btn {
+.listening__btn {
   width: 110px;
   height: 40px;
   border: 2px solid #7A4AE6;
@@ -103,7 +105,7 @@
   font-weight: 500;
   background-color: transparent;
 }
-.grammar__btn:focus {
+.listening__btn:focus {
   background-color: #7A4AE6;
   color: #fff;
-}/*# sourceMappingURL=test-grammar1.css.map */
+}/*# sourceMappingURL=test-listening3.css.map */
