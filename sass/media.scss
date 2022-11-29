@@ -1,0 +1,22 @@
+%text-style {
+    font-size: 20px;
+    line-height: 16px;
+}
+
+%width {
+    width: 335px;
+    margin: auto;
+}
+
+@media screen and (max-width: 460px) {
+
+    .header {
+        .head {
+            height: 55px;
+            align-items: center;
+            padding-top: 50px;
+            color: #fff;
+            @extend%width
+        }
+    }
+}
