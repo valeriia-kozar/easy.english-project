@@ -4,7 +4,8 @@
 }
 
 %width {
-    width: 1190px;
+    width: 100%;
+    max-width: 1190px;
     margin: auto;
 }
 
@@ -148,8 +149,7 @@
 }
 
 .main {
-    width: 1190px;
-    margin: auto;
+    @extend%width;
     position: relative;
 }
 
@@ -371,7 +371,7 @@
         line-height: 60px;
         color: #473C4B;
         position: relative;
-        top: 46px;
+        top: 45px;
         left: 415px;
     }
 }
