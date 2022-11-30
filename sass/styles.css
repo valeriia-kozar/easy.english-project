@@ -3,8 +3,9 @@
   line-height: 25px;
 }
 
-.footer__container, .form, .feedback, .heart, .stairway, .course__content, .course, .price__container, .price, .easy__container, .background__container, .header .head {
-  width: 1190px;
+.footer__container, .form, .feedback, .heart, .stairway, .course__content, .course, .price__container, .price, .easy__container, .background__container, .main, .header .head {
+  width: 100%;
+  max-width: 1190px;
   margin: auto;
 }
 
@@ -125,8 +126,6 @@
 }
 
 .main {
-  width: 1190px;
-  margin: auto;
   position: relative;
 }
 
@@ -317,7 +316,7 @@
   line-height: 60px;
   color: #473C4B;
   position: relative;
-  top: 46px;
+  top: 45px;
   left: 415px;
 }
 

@@ -1,0 +1,95 @@
+%text-style {
+    font-size: 20px;
+    line-height: 16px;
+}
+
+%width {
+    max-width: 1190px;
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 460px) {
+
+    .header {
+        .head {
+            height: 55px;
+            align-items: center;
+            padding-top: 50px;
+            color: #fff;
+            @extend%width;
+        }
+    }
+
+    .background {
+        padding-top: 72px;
+        height: 570px;
+
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 25px;
+            padding: 30px 0 40px;
+        }
+
+        &__btn {
+            width: 320px;
+            height: 50px;
+            font-size: 18px;
+            line-height: 23px;
+        }
+
+        &__text-lesson {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__girl-container {
+            display: none;
+        }
+    }
+
+    .easy {
+        &__content {
+            @extend%width;
+            height: 240px;
+        }
+
+        &__content-title {
+            line-height: 45px;
+        }
+
+        &__content-text {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    .banner {
+        height: 80px;
+        margin: 50px 100px 0;
+    
+        &__container {
+            width: 330px;
+            height: 80px;
+            background-size: 200px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    .price {
+
+        &__container {
+            height: 1200px;
+            margin-top: 500px;
+        }
+    }
+}
