@@ -1,3 +1,5 @@
+@import "variables";
+
 %text-style {
     font-size: 20px;
     line-height: 25px;
@@ -77,7 +79,7 @@
     }
 
     &__nav-dropdown h2 {
-        color: #7A4AE6;
+        color: $main-purple;
         font-weight: 500;
         margin-bottom: 15px;
         padding-left: 40px;
@@ -114,7 +116,7 @@
     &__btn {
         width: 220px;
         height: 55px;
-        border: 3px solid #83F4BA;
+        border: 3px solid $main-green;
         border-radius: 25px;
         background: transparent;
         transition: .5s;
@@ -122,7 +124,7 @@
     }
 
     &__btn:hover {
-        background-color: #83F4BA;
+        background-color: $main-green;
     }
 
     &__btn-text {
@@ -145,7 +147,7 @@
 }
 
 .contact-link:hover {
-    color: #7A4AE6;
+    color: $main-purple;
 }
 
 .main {
@@ -156,7 +158,7 @@
 .background {
     width: 100%;
     height: 800px;
-    background-color: #7A4AE6;
+    background-color: $main-purple;
     padding-top: 200px;
     position: relative;
 
@@ -177,7 +179,7 @@
     }
 
     &__title span {
-        color: #83F4BA;
+        color: $main-green;
     }
 
     &__text {
@@ -189,7 +191,7 @@
     &__btn {
         width: 625px;
         height: 70px;
-        background: #83F4BA;
+        background: $main-green;
         box-shadow: 7px 8px 30px rgba(131, 244, 186, 0.5);
         border-radius: 50px;
         border: 2px solid transparent;
@@ -198,7 +200,7 @@
         font-weight: 700;
         font-size: 28px;
         line-height: 35px;
-        color: #473C4B;
+        color: $main-brown;
     }
 
     &__btn:hover {
@@ -289,7 +291,7 @@
 }
 
 .easy {
-    color: #473C4B;
+    color: $main-brown;
 
     &__container {
         height: 570px;
@@ -319,12 +321,12 @@
         font-weight: 700;
         font-size: 35px;
         line-height: 50px;
-        color: #7A4AE6;
+        color: $main-purple;
         padding-bottom: 20px;
     }
 
     &__content-text {
-        color: #473C4B;
+        color: $main-brown;
         font-size: 30px;
         line-height: 38px;
     }
@@ -346,7 +348,7 @@
         position: absolute;
         right: 0;
         z-index: 20;
-        background-color: #83F4BA;
+        background-color: $main-green;
         background-image: url(../img/pencil-border.png);
         background-repeat: no-repeat;
         background-size: 1000px;
@@ -369,7 +371,7 @@
         font-weight: 700;
         font-size: 40px;
         line-height: 60px;
-        color: #473C4B;
+        color: $main-brown;
         position: relative;
         top: 45px;
         left: 415px;
@@ -453,7 +455,7 @@
     }
 
     &__title span {
-        color: #7A4AE6;
+        color: $main-purple;
         font-weight: 600;
     }
 
@@ -489,7 +491,7 @@
     &__link {
         padding: 30px 0;
         text-align: center;
-        background: #83F4BA;
+        background: $main-green;
         transition: .5s;
     }
 
@@ -505,7 +507,7 @@
         font-weight: 600;
         font-size: 30px;
         line-height: 45px;
-        color: #7A4AE6;
+        color: $main-purple;
         transition: .5s;
     }
 }
@@ -552,7 +554,7 @@
         font-weight: 700;
         font-size: 45px;
         line-height: 57px;
-        color: #473C4B;
+        color: $main-brown;
         margin: 120px 0 80px;
     }
 
@@ -573,7 +575,7 @@
         font-size: 25px;
         line-height: 31px;
         text-align: center;
-        color: #473C4B;
+        color: $main-brown;
         white-space: pre-wrap;
     }
 
@@ -600,7 +602,7 @@
         font-size: 25px;
         line-height: 31px;
         text-align: center;
-        color: #473C4B;
+        color: $main-brown;
     }
 
     &__papers {
@@ -671,7 +673,7 @@
     &__btn {
         width: 366px;
         height: 71px;
-        background: #83F4BA;
+        background: $main-green;
         box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
         border-radius: 40px;
         border: 2px solid transparent;
@@ -679,13 +681,13 @@
         font-weight: 700;
         font-size: 25px;
         line-height: 31px;
-        color: #7A4AE6;
+        color: $main-purple;
         cursor: pointer;
     }
 
     &__btn:hover {
         background-color: transparent;
-        border: 2px solid #7A4AE6;
+        border: 2px solid $main-purple;
     }
 }
 
@@ -702,7 +704,7 @@
     font-weight: 700;
     font-size: 45px;
     line-height: 57px;
-    color: #473C4B;
+    color: $main-brown;
     text-align: right;
     margin-bottom: 90px;
     }
@@ -736,12 +738,13 @@
 
     &__image {
         transition: .5s;
-        outline: 2px solid #7a4ae6;
+        outline: 2px solid $main-purple;
         border-radius: 18px;
+        height: max-content;
     }
 
     &__image:hover {
-        outline: 2px solid #83F4BA;
+        outline: 2px solid $main-green;
     }
 }
 
@@ -757,13 +760,13 @@
         font-weight: 700;
         font-size: 45px;
         line-height: 57px;
-        color: #473C4B;
+        color: $main-brown;
     }
 
     &__container {
         height: 640px;
         display: flex;
-        background: #7A4AE6;
+        background: $main-purple;
         border-radius: 30px;
         padding: 50px 50px 0 50px;
         position: relative;
@@ -828,7 +831,7 @@
 
     &__btn {
         height: 65px;
-        border: 3px solid #83F4BA;
+        border: 3px solid $main-green;
         filter: drop-shadow(7px 8px 30px rgba(131, 244, 186, 0.5));
         border-radius: 50px;
         background-color: transparent;
@@ -836,7 +839,7 @@
     }
 
     &__btn:hover {
-        background-color: #83F4BA;
+        background-color: $main-green;
     }
 
     &__btn a {
@@ -849,7 +852,7 @@
 .footer {
     margin-top: 100px;
     height: 200px;
-    background-color: #83F4BA;
+    background-color: $main-green;
 
     &__container {
         display: flex;
@@ -902,7 +905,7 @@
 
 .copyright {
     border-top: 1px solid #A8F7CF;
-    background: #83F4BA;
+    background: $main-green;
     color: rgba(0, 0, 0, 0.3);
     text-align: center;
 }
@@ -942,46 +945,46 @@
 .feedback__image-bg:hover .thumb,
 .feedback__image-bg:hover .star,
 .feedback__image-bg:hover .comment, 
+.feedback__image-bg:hover .heart-comment,
 .feedback__image-bg:hover .heart {
     animation-play-state: running;
 }
-
 
 
 .comment {
     animation: comment .5s forwards;
     animation-play-state: paused;
 }
-
-.comment-one {
-    animation: comment-one .5s forwards;
-    animation-play-state: paused;
-}
-
-.comment-two {
-    animation: comment-two .5s forwards;
-    animation-play-state: paused;
-}
-
-.comment-three {
-    animation: comment-three .5s forwards;
-    animation-play-state: paused;
-}
-
-.comment-four {
-    animation: comment-four .5s forwards;
-    animation-play-state: paused;
-}
-
-.comment-five {
-    animation: comment-five .5s forwards;
-    animation-play-state: paused;
-}
-
-.comment-six {
-    animation: comment-six .5s forwards;
-    animation-play-state: paused;
-}
+//
+//.comment-one, .comment-heart-one {
+//    animation: comment-one .5s forwards;
+//    animation-play-state: paused;
+//}
+//
+//.comment-two, .comment-heart-two {
+//    animation: comment-two .5s forwards;
+//    animation-play-state: paused;
+//}
+//
+//.comment-three, .comment-heart-three {
+//    animation: comment-three .5s forwards;
+//    animation-play-state: paused;
+//}
+//
+//.comment-four, .comment-heart-four {
+//    animation: comment-four .5s forwards;
+//    animation-play-state: paused;
+//}
+//
+//.comment-five, .comment-heart-five {
+//    animation: comment-five .5s forwards;
+//    animation-play-state: paused;
+//}
+//
+//.comment-six, .comment-heart-six {
+//    animation: comment-six .5s forwards;
+//    animation-play-state: paused;
+//}
 
 
 .thumb {
@@ -1031,14 +1034,14 @@
     }
 
     to {
-        fill: #7A4AE6;
+        fill: $main-purple;
         opacity: .7;
     }
 }
 
 @keyframes heart {
     from {
-        fill: #7A4AE6;
+        fill: $main-purple;
     }
 
     to {
@@ -1053,7 +1056,7 @@
     }
 
     to {
-        transform: scale(2);
+        transform: scale(1.1);
     }
 }
 
@@ -1109,69 +1112,13 @@
     }
 }
 
-// @keyframes comment {
-//     from {
-//         transform: translate(0, 0);
-//     }
+.heart-comment {
+    animation: commentScale 0.5s forwards;
+    animation-play-state: paused;
+}
 
-//     to {
-//         transform: scale(2);
-//     }
-// }
-
-// @keyframes comment-one {
-//     from {
-//         transform: scale(1);
-//     }
-
-//     to {
-//         transform: scale(2);
-//     }
-// }
-
-// @keyframes comment-two {
-//     from {
-//         transform: scale(1);
-//     }
-
-//     to {
-//         transform: scale(2);
-//     }
-// }
-
-// @keyframes comment-three {
-//     from {
-//         transform: translate(0, 0);
-//     }
-
-//     to {
-//         transform: scale(2);
-//     }
-// }
-
-// @keyframes comment-four {
-//     from {
-//         transform: translate(0, 0);
-//     }
-
-//     to {
-//     }
-// }
-
-// @keyframes comment-five {
-//     from {
-//         transform: translate(0, 0);
-//     }
-
-//     to {
-//     }
-// }
-
-// @keyframes comment-six {
-//     from {
-//         transform: translate(0, 0);
-//     }
-
-//     to {
-//     }
-// }
+@keyframes commentScale {
+    to {
+        transform: scale(1.3) translate(-9%, -9%);
+    }
+}

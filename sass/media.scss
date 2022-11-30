@@ -42,5 +42,54 @@
             font-size: 18px;
             line-height: 23px;
         }
+
+        &__text-lesson {
+            font-size: 12px;
+            line-height: 15px;
+        }
+
+        &__girl-container {
+            display: none;
+        }
+    }
+
+    .easy {
+        &__content {
+            @extend%width;
+            height: 240px;
+        }
+
+        &__content-title {
+            line-height: 45px;
+        }
+
+        &__content-text {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    .banner {
+        height: 80px;
+        margin: 50px 100px 0;
+    
+        &__container {
+            width: 330px;
+            height: 80px;
+            background-size: 200px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+
+    .price {
+
+        &__container {
+            height: 1200px;
+            margin-top: 500px;
+        }
     }
 }
