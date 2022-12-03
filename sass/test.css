@@ -40,6 +40,16 @@
   margin-top: 10px;
   font-size: 20px;
 }
+.test-input::-moz-placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(46, 53, 58, 0.3);
+}
+.test-input:-ms-input-placeholder {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(46, 53, 58, 0.3);
+}
 .test-input::placeholder {
   font-size: 20px;
   line-height: 25px;
@@ -67,6 +77,4 @@
 }
 .test-btn:focus {
   border: 2px solid #000;
-}
-
-/*# sourceMappingURL=test.css.map */
+}/*# sourceMappingURL=test.css.map */
