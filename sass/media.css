@@ -217,8 +217,5 @@
     margin-top: 0;
   }
 }
-main section:not(.form) {
-  display: none;
-}
 
 /*# sourceMappingURL=media.css.map */

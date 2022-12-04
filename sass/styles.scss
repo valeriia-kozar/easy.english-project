@@ -763,6 +763,11 @@
         color: $main-brown;
     }
 
+    &__laptop {
+        width: 50%;
+        margin-right: 70px;
+    }
+
     &__container {
         height: 100%;
         display: flex;
@@ -778,6 +783,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 20px;
+        padding-bottom: 90px;
     }
 
     &__laptop-title {
@@ -796,7 +802,7 @@
     &__laptop-img {
         position: absolute;
         left: -30px;
-        top: 227px;
+        top: 182px;
     }
 
     &__laptop-img-adaptive {
@@ -842,6 +848,7 @@
         border-radius: 50px;
         background-color: transparent;
         transition: .5s;
+        margin-top: 30px;
     }
 
     &__btn:hover {
