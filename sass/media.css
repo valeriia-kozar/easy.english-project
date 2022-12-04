@@ -59,13 +59,6 @@
     left: 0;
     right: 0;
   }
-  .background__lamp-container svg::before {
-    content: "a";
-    display: inline-block;
-    height: 100px;
-    width: 1px;
-    stroke: red;
-  }
   .easy__content {
     height: 240px;
     width: 320px;
@@ -130,14 +123,23 @@
   }
   .price__text, .price li, .price__price {
     font-size: 15px;
+    line-height: 100%;
+  }
+  .price__title, .price__text, .price__price, .price__level-list {
+    padding: 20px;
+    margin-top: 0;
+  }
+  .price__lesson-list {
+    padding: 30px 0 0;
   }
   .price__pin {
     left: 50%;
     transform: translate(-70%, -50%);
     top: 0;
   }
-  .price__link {
+  .price__link a {
     font-size: 18px;
+    line-height: 27px;
   }
   .price__thread {
     top: 0;
@@ -169,6 +171,26 @@
   }
   .footer__nav {
     display: none;
+  }
+  .form {
+    width: 100%;
+  }
+  .form__laptop-title {
+    font-size: 25px;
+    line-height: 31px;
+  }
+  .form__laptop-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .form__container {
+    flex-direction: column;
+  }
+  .form__laptop-img {
+    display: none;
+  }
+  .form__laptop-img-adaptive {
+    display: block;
   }
 }
 

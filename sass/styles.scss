@@ -764,7 +764,7 @@
     }
 
     &__container {
-        height: 640px;
+        height: 100%;
         display: flex;
         background: $main-purple;
         border-radius: 30px;
@@ -777,7 +777,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 50px;
+        gap: 20px;
     }
 
     &__laptop-title {
@@ -799,6 +799,10 @@
         top: 227px;
     }
 
+    &__laptop-img-adaptive {
+        display: none;
+    }
+
     &__label {
         font-style: italic;
         font-weight: 500;
@@ -809,7 +813,8 @@
     }
 
     &__input {
-        width: 511px;
+        width: 100%;
+        max-width: 510px;
         height: 65px;
         background: #FFFFFF;
         border-radius: 50px;

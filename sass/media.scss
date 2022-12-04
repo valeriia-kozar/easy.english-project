@@ -85,13 +85,6 @@
             right: 0;
         }
 
-        &__lamp-container svg::before {
-            content: 'a';
-            display: inline-block;
-            height: 100px;
-            width: 1px;
-            stroke: red;
-        }
     }
 
     .easy {
@@ -176,6 +169,16 @@
 
         &__text, li, &__price {
             font-size: 15px;
+            line-height: 100%;
+        }
+
+        &__title, &__text, &__price, &__level-list {
+            padding: 20px;
+            margin-top: 0;
+        }
+
+        &__lesson-list {
+            padding: 30px 0 0;
         }
 
         &__pin {
@@ -184,8 +187,9 @@
             top: 0;
         }
 
-        &__link {
+        &__link a {
             font-size: 18px;
+            line-height: 27px;
         }
 
         &__thread {
@@ -236,5 +240,32 @@
         }
 
         
+    }
+
+    .form {
+        width: 100%;
+
+        &__laptop-title {
+            font-size: 25px;
+            line-height: 31px;
+        }
+
+        &__laptop-text {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        &__container {
+            flex-direction: column;
+
+        }
+
+        &__laptop-img {
+            display: none;
+        }
+
+        &__laptop-img-adaptive {
+            display: block;
+        }
     }
 }
