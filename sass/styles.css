@@ -662,6 +662,7 @@
 }
 .form__laptop-img-adaptive {
   display: none;
+  background-color: #7A4AE6;
 }
 .form__label {
   font-style: italic;

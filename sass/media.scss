@@ -11,7 +11,7 @@
 
 @media screen and (max-width: 460px) {
 
-    main section {
+    main section:not(.form) {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -245,6 +245,19 @@
     .form {
         width: 100%;
 
+        &__input {
+            height: 50px;
+            font-size: 15px;
+
+            &::placeholder {
+                font-size: inherit;
+            }
+        }
+
+        &__laptop {
+            margin-bottom: 40px;
+        }
+
         &__laptop-title {
             font-size: 25px;
             line-height: 31px;
@@ -257,7 +270,8 @@
 
         &__container {
             flex-direction: column;
-
+            border-radius: 0;
+            padding: 40px 20px 0 20px;
         }
 
         &__laptop-img {
@@ -266,6 +280,28 @@
 
         &__laptop-img-adaptive {
             display: block;
+
+            img {
+                max-width: 100%;
+            }
         }
+
+        &__label {
+            font-size: 15px;
+        }
+
+        &__btn {
+            margin-top: 20px;
+        }
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+}
+
+main {
+    section:not(.form) {
+        display: none;
     }
 }

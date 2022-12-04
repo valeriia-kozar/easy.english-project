@@ -1,5 +1,5 @@
 @media screen and (max-width: 460px) {
-  main section {
+  main section:not(.form) {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -175,6 +175,16 @@
   .form {
     width: 100%;
   }
+  .form__input {
+    height: 50px;
+    font-size: 15px;
+  }
+  .form__input::placeholder {
+    font-size: inherit;
+  }
+  .form__laptop {
+    margin-bottom: 40px;
+  }
   .form__laptop-title {
     font-size: 25px;
     line-height: 31px;
@@ -185,6 +195,8 @@
   }
   .form__container {
     flex-direction: column;
+    border-radius: 0;
+    padding: 40px 20px 0 20px;
   }
   .form__laptop-img {
     display: none;
@@ -192,6 +204,21 @@
   .form__laptop-img-adaptive {
     display: block;
   }
+  .form__laptop-img-adaptive img {
+    max-width: 100%;
+  }
+  .form__label {
+    font-size: 15px;
+  }
+  .form__btn {
+    margin-top: 20px;
+  }
+  .footer {
+    margin-top: 0;
+  }
+}
+main section:not(.form) {
+  display: none;
 }
 
 /*# sourceMappingURL=media.css.map */
