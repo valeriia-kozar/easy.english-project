@@ -11,6 +11,11 @@
 
 @media screen and (max-width: 460px) {
 
+    main section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .header {
         .head {
             height: 55px;
@@ -47,7 +52,6 @@
         }
 
         &__content {
-            max-width: 320px;
             width: 100%;
         }
 
@@ -62,6 +66,8 @@
             height: 50px;
             font-size: 18px;
             line-height: 23px;
+            margin: 0 auto;
+            display: block;
         }
 
         &__text-lesson {
@@ -72,6 +78,19 @@
 
         &__girl-container {
             display: none;
+        }
+
+        &__lamp {
+            left: 0;
+            right: 0;
+        }
+
+        &__lamp-container svg::before {
+            content: 'a';
+            display: inline-block;
+            height: 100px;
+            width: 1px;
+            stroke: red;
         }
     }
 
@@ -134,7 +153,7 @@
             top: 30px;
         }
 
-        .&:hover .&__text {
+        &:hover &__text {
             -webkit-animation-play-state: unset;
             animation-play-state: unset;
         }
@@ -143,17 +162,42 @@
     .price {
 
         &__container {
-            height: 1200px;
             margin-top: 500px;
             flex-direction: column;
             gap: 170px;
+        }
+
+        &__decor {
+            width: 100%;
+            height: 117px;
+            bottom: -4px;
+            left: unset;
+        }
+
+        &__text, li, &__price {
+            font-size: 15px;
+        }
+
+        &__pin {
+            left: 50%;
+            transform: translate(-70%, -50%);
+            top: 0;
+        }
+
+        &__link {
+            font-size: 18px;
+        }
+
+        &__thread {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
         &__box-one,
         &__box-two {
             max-width: 530px;
             width: 100%;
-            height: 410px;
         }
 
         &__title {

@@ -85,8 +85,7 @@
 .header__nav-dropdown-link {
   font-size: 18px;
   line-height: 23px;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration-line: underline;
   color: #000000;
 }
 .header__nav-dropdown-contacts {
@@ -215,28 +214,21 @@
   width: 100%;
 }
 .background .background__lamp-container:hover .lamp-light {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 .background .background__lamp-container:hover .lamp {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 .background .lamp {
-  -webkit-animation: lamp 0.5s forwards;
-          animation: lamp 0.5s forwards;
+  animation: lamp 0.5s forwards;
   fill: #fff;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation-play-state: paused;
 }
 .background .lamp-light {
-  -webkit-animation: lampLight 0.5s forwards;
-          animation: lampLight 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: lampLight 0.5s forwards;
+  animation-play-state: paused;
   background-color: rgba(122, 74, 230, 0.43);
-  -webkit-clip-path: polygon(50% 0, 10% 100%, 90% 100%);
-          clip-path: polygon(50% 0, 10% 100%, 90% 100%);
+  clip-path: polygon(50% 0, 10% 100%, 90% 100%);
   height: 100%;
 }
 .background .lamp-light-container {
@@ -293,8 +285,7 @@
   transition: 0.5s;
 }
 .banner:hover .banner__text {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 .banner__container {
   width: 1300px;
@@ -307,8 +298,7 @@
   background-repeat: no-repeat;
   background-size: 1000px;
   background-position: right center;
-  -webkit-clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
-          clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
+  clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
   transition: 0.5s;
 }
 .banner__img {
@@ -317,10 +307,8 @@
   top: 68px;
 }
 .banner__text {
-  -webkit-animation: opacityAnimation 0.5s forwards;
-          animation: opacityAnimation 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: opacityAnimation 0.5s forwards;
+  animation-play-state: paused;
   max-width: 620px;
   font-style: italic;
   font-weight: 700;
@@ -362,7 +350,7 @@
   top: 68px;
 }
 .price__container {
-  height: 1020px;
+  margin-bottom: 80px;
   margin-top: 500px;
   display: flex;
   gap: 40px;
@@ -616,15 +604,12 @@
   top: 360px;
 }
 .feedback__image-bg:hover .thumb {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 .feedback__image {
   transition: 0.5s;
   outline: 2px solid #7A4AE6;
   border-radius: 18px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
   height: max-content;
 }
 .feedback__image:hover {
@@ -692,16 +677,6 @@
   border: none;
   margin-top: 10px;
   font-size: 20px;
-}
-.form__input::-moz-placeholder {
-  font-size: 20px;
-  line-height: 25px;
-  color: rgba(46, 53, 58, 0.3);
-}
-.form__input:-ms-input-placeholder {
-  font-size: 20px;
-  line-height: 25px;
-  color: rgba(46, 53, 58, 0.3);
 }
 .form__input::placeholder {
   font-size: 20px;
@@ -778,15 +753,6 @@
   text-align: center;
 }
 
-@-webkit-keyframes lampLight {
-  from {
-    background-color: rgba(122, 74, 230, 0.43);
-  }
-  to {
-    background-color: rgb(122, 74, 230);
-  }
-}
-
 @keyframes lampLight {
   from {
     background-color: rgba(122, 74, 230, 0.43);
@@ -795,28 +761,12 @@
     background-color: rgb(122, 74, 230);
   }
 }
-@-webkit-keyframes lamp {
-  from {
-    fill: #fff;
-  }
-  to {
-    fill: rgb(122, 74, 230);
-  }
-}
 @keyframes lamp {
   from {
     fill: #fff;
   }
   to {
     fill: rgb(122, 74, 230);
-  }
-}
-@-webkit-keyframes opacityAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes opacityAnimation {
@@ -832,81 +782,52 @@
 .feedback__image-bg:hover .comment,
 .feedback__image-bg:hover .heart-comment,
 .feedback__image-bg:hover .heart {
-  -webkit-animation-play-state: running;
-          animation-play-state: running;
+  animation-play-state: running;
 }
 
 .comment {
-  -webkit-animation: comment 0.5s forwards;
-          animation: comment 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: comment 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .thumb {
-  -webkit-animation: thumb 0.5s forwards;
-          animation: thumb 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: thumb 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .thumb-one {
-  -webkit-animation: thumb-one 0.5s forwards;
-          animation: thumb-one 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: thumb-one 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .thumb-two {
-  -webkit-animation: thumb-two 0.5s forwards;
-          animation: thumb-two 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: thumb-two 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .thumb-three {
-  -webkit-animation: thumb-three 0.5s forwards;
-          animation: thumb-three 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: thumb-three 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .thumb-four {
-  -webkit-animation: thumb-four 0.5s forwards;
-          animation: thumb-four 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: thumb-four 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .thumb-five {
-  -webkit-animation: thumb-five 0.5s forwards;
-          animation: thumb-five 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: thumb-five 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .heart {
-  -webkit-animation: heart 0.5s forwards;
-          animation: heart 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+  animation: heart 0.5s forwards;
+  animation-play-state: paused;
 }
 
 .star {
-  -webkit-animation: star 0.5s forwards;
-          animation: star 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-@-webkit-keyframes star {
-  from {
-    fill: transparent;
-  }
-  to {
-    fill: #7A4AE6;
-    opacity: 0.7;
-  }
+  animation: star 0.5s forwards;
+  animation-play-state: paused;
 }
 
 @keyframes star {
@@ -918,28 +839,12 @@
     opacity: 0.7;
   }
 }
-@-webkit-keyframes heart {
-  from {
-    fill: #7A4AE6;
-  }
-  to {
-    fill: #ff0000;
-  }
-}
 @keyframes heart {
   from {
     fill: #7A4AE6;
   }
   to {
     fill: #ff0000;
-  }
-}
-@-webkit-keyframes thumb {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: scale(1.1);
   }
 }
 @keyframes thumb {
@@ -950,31 +855,12 @@
     transform: scale(1.1);
   }
 }
-@-webkit-keyframes thumb-one {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(50px, 40px);
-    transform: scale(1.2);
-  }
-}
 @keyframes thumb-one {
   from {
     transform: translate(0, 0);
   }
   to {
-    transform: translate(50px, 40px);
-    transform: scale(1.2);
-  }
-}
-@-webkit-keyframes thumb-two {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(40px, -30px);
-    transform: scale(1.1);
+    transform: translate(50px, 40px) scale(1.2);
   }
 }
 @keyframes thumb-two {
@@ -982,16 +868,7 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(40px, -30px);
-    transform: scale(1.1);
-  }
-}
-@-webkit-keyframes thumb-three {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-50px, 40px);
+    transform: translate(40px, -30px) scale(1.1);
   }
 }
 @keyframes thumb-three {
@@ -1002,28 +879,12 @@
     transform: translate(-50px, 40px);
   }
 }
-@-webkit-keyframes thumb-four {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-40px, -20px);
-  }
-}
 @keyframes thumb-four {
   from {
     transform: translate(0, 0);
   }
   to {
     transform: translate(-40px, -20px);
-  }
-}
-@-webkit-keyframes thumb-five {
-  from {
-    transform: translate(0, 0);
-  }
-  to {
-    transform: translate(-55px, 20px);
   }
 }
 @keyframes thumb-five {
@@ -1035,20 +896,14 @@
   }
 }
 .heart-comment {
-  -webkit-animation: commentScale 0.5s forwards;
-          animation: commentScale 0.5s forwards;
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
-@-webkit-keyframes commentScale {
-  to {
-    transform: scale(1.3) translate(-9%, -9%);
-  }
+  animation: commentScale 0.5s forwards;
+  animation-play-state: paused;
 }
 
 @keyframes commentScale {
   to {
     transform: scale(1.3) translate(-9%, -9%);
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
