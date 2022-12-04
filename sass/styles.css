@@ -629,6 +629,10 @@
   line-height: 57px;
   color: #473C4B;
 }
+.form__laptop {
+  width: 50%;
+  margin-right: 70px;
+}
 .form__container {
   height: 100%;
   display: flex;
@@ -643,6 +647,8 @@
   flex-direction: column;
   justify-content: center;
   gap: 20px;
+  padding-bottom: 90px;
+  padding-top: 58px;
 }
 .form__laptop-title {
   font-weight: 700;
@@ -658,7 +664,7 @@
 .form__laptop-img {
   position: absolute;
   left: -30px;
-  top: 227px;
+  top: 240px;
 }
 .form__laptop-img-adaptive {
   display: none;
@@ -698,6 +704,7 @@
   border-radius: 50px;
   background-color: transparent;
   transition: 0.5s;
+  margin-top: 30px;
 }
 .form__btn:hover {
   background-color: #83F4BA;
