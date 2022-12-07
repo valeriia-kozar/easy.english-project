@@ -115,6 +115,10 @@
     left: 55px;
     top: 30px;
   }
+  .price__title {
+    font-size: 28px;
+    padding: 30px 0;
+  }
   .price__link {
     padding: 20px 0;
   }
@@ -142,6 +146,60 @@
     display: flex;
     flex-direction: column;
     align-content: center;
+  }
+  .price__box {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .price__container {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .heart__title {
+    max-width: 340px;
+    font-size: 24px;
+  }
+  .form {
+    max-width: 730px;
+  }
+  .form__container {
+    flex-direction: column;
+    padding: 40px;
+  }
+  .form__elements {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .form__textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__textarea:nth-child(3) {
+    margin-bottom: 40px;
+  }
+  .form__title {
+    font-size: 28px;
+  }
+  .form__laptop {
+    width: 100%;
+  }
+  .form__laptop-text {
+    margin-top: 10px;
+  }
+  .form__laptop-img {
+    display: none;
+  }
+  .form__label {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .form__btn {
+    max-width: 510px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 760px) {
@@ -275,11 +333,6 @@
     animation: unset;
     -webkit-animation-play-state: unset;
     animation-play-state: unset;
-  }
-  .price__container {
-    margin-top: 0;
-    flex-direction: column;
-    gap: 50px;
   }
   .price__decor {
     width: 100%;
