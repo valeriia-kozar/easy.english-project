@@ -7,6 +7,10 @@
         padding-right: 20px;
     }
 
+    .header {
+        padding: 0 20px;
+    }
+
     .easy {
 
         &__girl {
@@ -16,7 +20,7 @@
         }
 
         &__girl img {
-            width: 400px;
+            width: 370px;
         }
 
         &__content {
@@ -63,7 +67,15 @@
         }
     }
 
+    .heart {
+
+        &__container {
+            position: unset;
+        }
+    }
+    // TODO: CAROUSEL
     .feedback {
+        display: none;
 
         &__image-bg svg  {
             height: 400px;
@@ -71,10 +83,23 @@
     }
 
     .form {
+        max-width: 980px;
+
+        &__laptop-img {
+            bottom: -13.5px;
+        }
 
         &__laptop-img img {
             width: 500px;
         }
+
+        &__title {
+            font-size: 38px;
+        }
+    }
+
+    .footer {
+        padding: 0 20px;
     }
 
 }
@@ -94,6 +119,106 @@
     main section:not(.form, .banner) {
         padding-left: 20px;
         padding-right: 20px;
+    }
+
+    .header {
+
+        &__nav-link {
+             font-size: 14px;
+            margin-right: 15px;
+        }
+
+        &__nav-img {
+            right: -3px;
+        }
+
+        &__logo {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        &__btn {
+            width: 140px;
+        }
+
+        &__btn-text {
+            font-size: 14px;
+        }
+
+        .logo {
+            width: 37px;
+            height: 37px;
+        }
+    }
+
+    .banner {
+        height: 80px;
+
+        &__container {
+            width: 80%;
+            height: 80px;
+            background-size: 490px;
+        }
+
+        &__text {
+            font-size: 18px;
+            line-height: 20px;
+            left: 190px;
+            top: 23px;
+            max-width: 300px;
+        }
+
+        &__img img {
+            width: 66px;
+            height: 14px;
+        }
+
+        &__img {
+            left: 55px;
+            top: 30px;
+        }
+    }
+
+    .price {
+
+        &__link {
+            padding: 20px 0;
+        }
+
+        &__link a {
+            font-size: 22px;
+        }
+    }
+
+    .stairway {
+
+        &__arrow img {
+            display: none;
+        }
+
+        div.stairway__arrow {
+            display: none;
+        }
+
+         &__arrow {
+            display: none;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        &__item {
+            margin-bottom: 40px;
+        }
+
+        &__items, &__items-two {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
     }
 }
 
@@ -127,6 +252,8 @@
             height: 14px;
         }
     }
+
+
 }
 
 @media screen and (max-width: 460px) {
@@ -340,7 +467,7 @@
 
     .stairway {
 
-        &__item:nth-child(2n) {
+        &__arrow img {
             display: none;
         }
 
