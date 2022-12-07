@@ -386,37 +386,27 @@
     position: relative;
     @extend%width;
 
-    &__decor {
-        position: relative;
-        height: 0;
-        bottom: 283px;
-        left: 25px;
+    &__box:nth-child(2) {
+        margin-top: 145px;
     }
 
-    &__pin,
-    &__thread {
-        position: absolute;
+    &__decor {
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+
+    &__line {
+        width: 100%;
+        margin-bottom: -5px;
     }
 
     &__pin {
-        left: 210px;
-        top: 30px;
-        z-index: 50;
+        left: 50%;
+        transform: translate(calc(-50% - 18px), -35px);
+        position: absolute;
     }
-
-    &__thread {
-        top: 69px;
-    }
-
-    //&__pin-two {
-    //    top: 30px;
-    //    left: 210px;
-    //    z-index: 50;
-    //}
-    //
-    //&__thread-two {
-    //    top: 68px;
-    //}
 
     &__container {
         margin-bottom: 80px;

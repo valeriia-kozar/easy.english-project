@@ -326,22 +326,22 @@
   color: #000;
   position: relative;
 }
+.price__box:nth-child(2) {
+  margin-top: 145px;
+}
 .price__decor {
   position: relative;
-  height: 0;
-  bottom: 283px;
-  left: 25px;
+  width: 90%;
+  margin: 0 auto;
 }
-.price__pin, .price__thread {
-  position: absolute;
+.price__line {
+  width: 100%;
+  margin-bottom: -5px;
 }
 .price__pin {
-  left: 210px;
-  top: 30px;
-  z-index: 50;
-}
-.price__thread {
-  top: 69px;
+  left: 50%;
+  transform: translate(calc(-50% - 18px), -35px);
+  position: absolute;
 }
 .price__container {
   margin-bottom: 80px;
