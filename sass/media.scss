@@ -79,13 +79,22 @@
 
 }
 
+@media screen and (max-width: 1285px) {
+    .background__girl {
+        display: none;
+    }
+
+    .background__content {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1024px) {
 
     main section:not(.form, .banner) {
         padding-left: 20px;
         padding-right: 20px;
     }
-
 }
 
 @media screen and (max-width: 760px) {
