@@ -157,9 +157,8 @@
 
 .background {
     width: 100%;
-    height: 800px;
     background-color: $main-purple;
-    padding-top: 200px;
+    padding: 200px 0 180px;
     position: relative;
 
     &__container {
@@ -254,6 +253,10 @@
             max-height: 387px;
             width: 100%;
         }
+
+        &-container svg {
+            width: 150px;
+        }
     }
 
     .background__lamp-container:hover .lamp-light {
@@ -312,8 +315,7 @@
         right: 0;
         top: 50%;
         margin-top: -130px;
-        width: 725px;
-        height: 280px;
+        max-width: 715px;
     }
 
     &__content-title {
@@ -343,7 +345,8 @@
     }
 
     &__container {
-        width: 1300px;
+        max-width: 1300px;
+        width: 80%;
         height: 180px;
         position: absolute;
         right: 0;
@@ -391,9 +394,7 @@
     }
 
     &__pin,
-    &__thread,
-    &__pin-two,
-    &__thread-two {
+    &__thread {
         position: absolute;
     }
 
@@ -404,18 +405,18 @@
     }
 
     &__thread {
-        top: 67px;
+        top: 69px;
     }
 
-    &__pin-two {
-        top: 30px;
-        left: 210px;
-        z-index: 50;
-    }
-
-    &__thread-two {
-        top: 68px;
-    }
+    //&__pin-two {
+    //    top: 30px;
+    //    left: 210px;
+    //    z-index: 50;
+    //}
+    //
+    //&__thread-two {
+    //    top: 68px;
+    //}
 
     &__container {
         margin-bottom: 80px;
@@ -523,7 +524,6 @@
     &__content {
         background-image: url(../img/carousel.png);
         background-repeat: no-repeat;
-        height: 410px;
         padding: 50px;
         @extend%width;
     }
@@ -648,7 +648,8 @@
     &__container {
         position: absolute;
         right: 0;
-        width: 970px;
+        width: 100%;
+        max-width: 970px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -657,11 +658,11 @@
     &__image {
         position: absolute;
         left: 45%;
-        top: 30px;
+        top: 27px;
     }
 
     &__title {
-        width: 455px;
+        max-width: 455px;
         font-style: italic;
         font-weight: 500;
         font-size: 30px;
@@ -671,7 +672,8 @@
     }
 
     &__btn {
-        width: 366px;
+        width: 100%;
+        max-width: 366px;
         height: 71px;
         background: $main-green;
         box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
@@ -730,6 +732,11 @@
         position: absolute;
         right: -100px;
         top: 360px;
+
+        svg {
+            width: 622px;
+            height: 591px;
+        }
     }
 
     &__image-bg:hover .thumb {
@@ -924,7 +931,7 @@
     text-align: center;
 }
 
-////////////////////////ANIMATION SECTION///////////////////
+////////////////////////       ANIMATION SECTION         ///////////////////
 
 @keyframes lampLight {
     from {
@@ -964,42 +971,10 @@
     animation-play-state: running;
 }
 
-
 .comment {
     animation: comment .5s forwards;
     animation-play-state: paused;
 }
-//
-//.comment-one, .comment-heart-one {
-//    animation: comment-one .5s forwards;
-//    animation-play-state: paused;
-//}
-//
-//.comment-two, .comment-heart-two {
-//    animation: comment-two .5s forwards;
-//    animation-play-state: paused;
-//}
-//
-//.comment-three, .comment-heart-three {
-//    animation: comment-three .5s forwards;
-//    animation-play-state: paused;
-//}
-//
-//.comment-four, .comment-heart-four {
-//    animation: comment-four .5s forwards;
-//    animation-play-state: paused;
-//}
-//
-//.comment-five, .comment-heart-five {
-//    animation: comment-five .5s forwards;
-//    animation-play-state: paused;
-//}
-//
-//.comment-six, .comment-heart-six {
-//    animation: comment-six .5s forwards;
-//    animation-play-state: paused;
-//}
-
 
 .thumb {
     animation: thumb .5s forwards;

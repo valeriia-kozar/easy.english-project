@@ -1,17 +1,128 @@
-%text-style {
-    font-size: 20px;
-    line-height: 16px;
+@import "variables";
+
+@media screen and (max-width: 1400px) {
+
+    main section:not(.form, .banner) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .easy {
+
+        &__girl {
+            top: 115px;
+            left: -15px;
+            margin-right: 0;
+        }
+
+        &__girl img {
+            width: 400px;
+        }
+
+        &__content {
+            max-width: 600px;
+        }
+    }
+
+    .banner {
+
+        &__container {
+            background-size: 600px;
+        }
+
+        &__text {
+            max-width: 420px;
+            font-size: 26px;
+            top: 50px;
+            left: 333px;
+        }
+
+        &__img {
+            top: 76px;
+            left: 80px;
+        }
+
+        &__img img {
+            width: 180px;
+        }
+    }
+
+    .price {
+
+        &__pin {
+            left: 165px;
+            top: 80px;
+        }
+
+        &__thread {
+            top: 109px;
+        }
+
+        &__thread img {
+            width: 420px;
+        }
+    }
+
+    .feedback {
+
+        &__image-bg svg  {
+            height: 400px;
+        }
+    }
+
+    .form {
+
+        &__laptop-img img {
+            width: 500px;
+        }
+    }
+
 }
 
-%width {
-    max-width: 1190px;
-    width: 100%;
-    margin: auto;
+@media screen and (max-width: 1024px) {
+
+    main section:not(.form, .banner) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+
+    main section:not(.form, .banner) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .banner {
+
+        &__container {
+            width: 430px;
+            height: 100px;
+            background-size: 335px;
+        }
+
+        &__text {
+            font-size: 14px;
+            left: 148px;
+            top: 35px;
+            max-width: 270px;
+        }
+
+        &__img {
+            top: 41px;
+        }
+
+        &__img img {
+            height: 14px;
+        }
+    }
 }
 
 @media screen and (max-width: 460px) {
 
-    main section:not(.form) {
+    main section:not(.form, .banner) {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -22,8 +133,6 @@
             align-items: center;
             padding-top: 50px;
             color: #fff;
-            width: 100%;
-            max-width: 320px;
             margin: 0;
         }
 
@@ -42,8 +151,7 @@
     }
 
     .background {
-        padding-top: 72px;
-        height: 740px;
+        padding: 70px ;
 
         &__title {
             font-size: 50px;
@@ -85,14 +193,17 @@
             right: 0;
         }
 
+        &__lamp-container {
+            top: 7px;
+        }
+
+        &__lamp-container svg {
+            width: 80px;
+        }
+
     }
 
     .easy {
-        &__content {
-            //@extend%width;
-            height: 240px;
-            width: 320px;
-        }
 
         &__content-title {
             line-height: 45px;
@@ -104,10 +215,10 @@
         }
 
         &__girl {
-            bottom: -110px;
+            bottom: -105px;
             left: unset;
             margin-right: 0;
-            right: 5px;
+            right: 30px;
         }
 
         &__girl img {
@@ -118,22 +229,19 @@
 
     .banner {
         height: 80px;
-        margin: 50px 100px 0;
 
         &__container {
             width: 330px;
             height: 80px;
-            background-size: 200px;
-            right: unset;
-            margin-top: 100px;
+            background-size: 230px;
         }
 
         &__text {
             font-size: 12px;
             line-height: 20px;
-            left: 150px;
-            top: unset;
-            max-width: 180px;
+            left: 120px;
+            top: 25px;
+            max-width: 190px;
         }
 
         &__img img {
@@ -146,7 +254,8 @@
             top: 30px;
         }
 
-        &:hover &__text {
+        &__text {
+            animation: unset;
             -webkit-animation-play-state: unset;
             animation-play-state: unset;
         }
@@ -155,9 +264,9 @@
     .price {
 
         &__container {
-            margin-top: 500px;
+            margin-top: 0;
             flex-direction: column;
-            gap: 170px;
+            gap: 50px;
         }
 
         &__decor {
@@ -187,6 +296,11 @@
             top: 0;
         }
 
+        &__pin img {
+            width: 27px;
+            height: 32px;
+        }
+
         &__link a {
             font-size: 18px;
             line-height: 27px;
@@ -200,8 +314,9 @@
 
         &__box-one,
         &__box-two {
-            max-width: 530px;
+            max-width: 320px;
             width: 100%;
+            margin: 0 auto;
         }
 
         &__title {
@@ -214,36 +329,74 @@
         }
     }
 
-    .feedback {
+    .stairway {
+
+        &__item:nth-child(2n) {
+            display: none;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+
+    .heart {
+        background-position-x: -15px;
+        background-position-y: -5px;
+        padding-top: 55px;
+        margin-top: 0;
+
+        &__container {
+            flex-direction: column;
+            position: unset;
+        }
 
         &__image {
             display: none;
         }
+
+        &__title {
+            font-size: 25px;
+            line-height: 31px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
     }
 
-    .footer {
+    .feedback {
 
-        &__container {
-            flex-direction: column;
-        }
-
-        &__logo img {
-            margin: 30px 0 10px;
-        }
-
-        &__box:nth-child(2) {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
             text-align: center;
         }
 
-        &__nav {
+        &__image {
             display: none;
         }
 
-        
+        &__image-bg {
+            display: none;
+        }
     }
+
+
 
     .form {
         width: 100%;
+        margin-top: 100px;
+
+        &__title {
+            font-size: 30px;
+            line-height: 38px;
+            text-align: center;
+        }
 
         &__input {
             height: 50px;
@@ -256,6 +409,8 @@
 
         &__laptop {
             margin-bottom: 40px;
+            width: unset;
+            margin-right: 70px;
         }
 
         &__laptop-title {
@@ -283,7 +438,13 @@
 
             img {
                 max-width: 100%;
+                border-top: 1px solid $main-purple;
+                margin-bottom: -11.5px;
             }
+        }
+
+        &__elements {
+            padding-top: 0;
         }
 
         &__label {
@@ -297,6 +458,23 @@
 
     .footer {
         margin-top: 0;
+
+        &__container {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        &__logo img {
+            margin: 30px 0 10px;
+        }
+
+        &__box:nth-child(2) {
+            text-align: center;
+        }
+
+        &__nav {
+            display: none;
+        }
     }
 }
 
@@ -305,3 +483,4 @@
 //        display: none;
 //    }
 //}
+

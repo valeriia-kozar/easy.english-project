@@ -131,9 +131,8 @@
 
 .background {
   width: 100%;
-  height: 800px;
   background-color: #7A4AE6;
-  padding-top: 200px;
+  padding: 200px 0 180px;
   position: relative;
 }
 .background__container {
@@ -213,6 +212,9 @@
   max-height: 387px;
   width: 100%;
 }
+.background__lamp-container svg {
+  width: 150px;
+}
 .background .background__lamp-container:hover .lamp-light {
   animation-play-state: running;
 }
@@ -261,8 +263,7 @@
   right: 0;
   top: 50%;
   margin-top: -130px;
-  width: 725px;
-  height: 280px;
+  max-width: 715px;
 }
 .easy__content-title {
   font-style: italic;
@@ -288,7 +289,8 @@
   animation-play-state: running;
 }
 .banner__container {
-  width: 1300px;
+  max-width: 1300px;
+  width: 80%;
   height: 180px;
   position: absolute;
   right: 0;
@@ -330,7 +332,7 @@
   bottom: 283px;
   left: 25px;
 }
-.price__pin, .price__thread, .price__pin-two, .price__thread-two {
+.price__pin, .price__thread {
   position: absolute;
 }
 .price__pin {
@@ -339,15 +341,7 @@
   z-index: 50;
 }
 .price__thread {
-  top: 67px;
-}
-.price__pin-two {
-  top: 30px;
-  left: 210px;
-  z-index: 50;
-}
-.price__thread-two {
-  top: 68px;
+  top: 69px;
 }
 .price__container {
   margin-bottom: 80px;
@@ -430,7 +424,6 @@
 .course__content {
   background-image: url(../img/carousel.png);
   background-repeat: no-repeat;
-  height: 410px;
   padding: 50px;
 }
 .course__title {
@@ -531,7 +524,8 @@
 .heart__container {
   position: absolute;
   right: 0;
-  width: 970px;
+  width: 100%;
+  max-width: 970px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -539,10 +533,10 @@
 .heart__image {
   position: absolute;
   left: 45%;
-  top: 30px;
+  top: 27px;
 }
 .heart__title {
-  width: 455px;
+  max-width: 455px;
   font-style: italic;
   font-weight: 500;
   font-size: 30px;
@@ -551,7 +545,8 @@
   background-repeat: no-repeat;
 }
 .heart__btn {
-  width: 366px;
+  width: 100%;
+  max-width: 366px;
   height: 71px;
   background: #83F4BA;
   box-shadow: 0 7px 20px rgba(131, 244, 186, 0.5);
@@ -602,6 +597,10 @@
   position: absolute;
   right: -100px;
   top: 360px;
+}
+.feedback__image-bg svg {
+  width: 622px;
+  height: 591px;
 }
 .feedback__image-bg:hover .thumb {
   animation-play-state: running;
