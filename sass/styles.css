@@ -156,7 +156,8 @@
   padding: 15px 0 25px;
 }
 .background__btn {
-  width: 625px;
+  max-width: 625px;
+  width: 100%;
   height: 70px;
   background: #83F4BA;
   box-shadow: 7px 8px 30px rgba(131, 244, 186, 0.5);
@@ -345,7 +346,7 @@
 }
 .price__container {
   margin-bottom: 80px;
-  margin-top: 500px;
+  margin-top: 120px;
   display: flex;
   gap: 40px;
   position: relative;
@@ -384,8 +385,6 @@
 .price__lesson-list li {
   padding-left: 5px;
   list-style-type: "-";
-  font-size: 30px;
-  line-height: 38px;
 }
 .price__lesson-list {
   padding: 15px 0 50px;
@@ -523,7 +522,7 @@
   position: absolute;
   right: 0;
   width: 100%;
-  max-width: 970px;
+  max-width: 1000px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -740,7 +739,7 @@
   font-weight: 500;
   color: #000;
 }
-.footer__box-image img {
+.footer__box-image a {
   margin-left: 15px;
 }
 .footer__contacts {
