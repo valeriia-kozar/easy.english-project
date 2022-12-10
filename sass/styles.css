@@ -249,21 +249,16 @@
   color: #473C4B;
 }
 .easy__container {
-  height: 570px;
   display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: -30px;
 }
 .easy__girl {
-  bottom: 3px;
-  left: -100px;
-  position: absolute;
   margin-right: 50px;
 }
 .easy__content {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -130px;
   max-width: 715px;
 }
 .easy__content-title {
@@ -290,6 +285,7 @@
   animation-play-state: running;
 }
 .banner__container {
+  padding: 0 40px;
   max-width: 1300px;
   width: 80%;
   height: 180px;
@@ -297,30 +293,33 @@
   right: 0;
   z-index: 20;
   background-color: #83F4BA;
-  background-image: url(../img/pencil-border.png);
-  background-repeat: no-repeat;
-  background-size: 1000px;
-  background-position: right center;
   clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 4% 51%, 0% 0%);
   transition: 0.5s;
-}
-.banner__img {
-  position: absolute;
-  left: 110px;
-  top: 68px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .banner__text {
+  background-image: url(../img/pencil-border.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
   animation: opacityAnimation 0.5s forwards;
   animation-play-state: paused;
   max-width: 620px;
   font-style: italic;
   font-weight: 700;
   font-size: 40px;
-  line-height: 60px;
   color: #473C4B;
-  position: relative;
-  top: 45px;
-  left: 415px;
+}
+.banner__img {
+  margin-right: 15px;
+}
+.banner__img img {
+  width: 100%;
+  max-width: 270px;
+  margin-right: 10px;
 }
 
 .price {
@@ -352,12 +351,7 @@
   position: relative;
   z-index: 50;
 }
-.price__box-one {
-  position: relative;
-  bottom: 100px;
-}
-.price__box-one, .price__box-two {
-  max-width: 570px;
+.price__box {
   width: 100%;
 }
 .price__box-content {
@@ -380,7 +374,7 @@
 }
 .price__text {
   margin-top: 50px;
-  padding: 0 40px;
+  padding: 0 10px 0 40px;
 }
 .price__lesson-list li {
   padding-left: 5px;
@@ -712,11 +706,12 @@
 }
 
 .footer {
+  padding-top: 40px;
   margin-top: 100px;
-  height: 200px;
   background-color: #83F4BA;
 }
 .footer__container {
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;

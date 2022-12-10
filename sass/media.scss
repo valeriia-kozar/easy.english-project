@@ -1,5 +1,35 @@
 @import "variables";
 
+@media screen and (max-width: 1260px) {
+    .banner__text {
+        font-size: 5.9vw;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .easy {
+        margin-top: 300px;
+        &__container {
+            flex-direction: column;
+            height: unset;
+        }
+
+        &__girl, &__content {
+            position: unset;
+        }
+    }
+
+    .background {
+        padding-bottom: 40px;
+
+        &__lamp {
+            right: 0;
+            bottom: -264px;
+        }
+    }
+}
+
 @media screen and (max-width: 1400px) {
 
     main section:not(.form, .banner) {
@@ -13,6 +43,10 @@
 
     .easy {
 
+        &__container {
+            margin-top: 20px;
+        }
+
         &__girl {
             top: 115px;
             left: -15px;
@@ -25,29 +59,6 @@
 
         &__content {
             max-width: 600px;
-        }
-    }
-
-    .banner {
-
-        &__container {
-            background-size: 600px;
-        }
-
-        &__text {
-            max-width: 420px;
-            font-size: 26px;
-            top: 50px;
-            left: 333px;
-        }
-
-        &__img {
-            top: 76px;
-            left: 80px;
-        }
-
-        &__img img {
-            width: 180px;
         }
     }
 
@@ -81,11 +92,6 @@
             font-size: 38px;
         }
     }
-
-    .footer {
-        padding: 0 20px;
-    }
-
 }
 
 @media screen and (max-width: 1285px) {
@@ -99,11 +105,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-
-    main section:not(.form, .banner) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
     .header {
 
@@ -135,33 +136,6 @@
         }
     }
 
-    .banner {
-
-        &__container {
-            width: 80%;
-            height: 100px;
-            background-size: 490px;
-        }
-
-        &__text {
-            font-size: 18px;
-            line-height: 20px;
-            left: 190px;
-            top: 33px;
-            max-width: 300px;
-        }
-
-        &__img img {
-            width: 66px;
-            height: 14px;
-        }
-
-        &__img {
-            left: 55px;
-            top: 42px;
-        }
-    }
-
     .price {
 
         &__title {
@@ -180,15 +154,7 @@
 
     .stairway {
 
-        &__arrow img {
-            display: none;
-        }
-
-        div.stairway__arrow {
-            display: none;
-        }
-
-         &__arrow {
+        &__items > &__item:nth-child(2n) {
             display: none;
         }
 
@@ -302,14 +268,24 @@
             gap: unset;
         }
     }
+
+    .banner {
+        &__text {
+            font-size: 25px;
+            animation: unset;
+        }
+
+        &__img {
+            margin-right: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 900px) {
+
 }
 
 @media screen and (max-width: 760px) {
-
-    main section:not(.form, .banner) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
 
     .header {
         .head {
@@ -375,28 +351,6 @@
         }
     }
 
-    .banner {
-
-        &__container {
-            background-size: 335px;
-        }
-
-        &__text {
-            font-size: 14px;
-            left: 148px;
-            top: 35px;
-            max-width: 220px;
-        }
-
-        &__img {
-            top: 41px;
-        }
-
-        &__img img {
-            height: 14px;
-        }
-    }
-
     .heart {
         background-position-x: -15px;
         background-position-y: -5px;
@@ -452,11 +406,13 @@
 
         &__laptop-img-adaptive {
             display: block;
+            width: 100%;
 
             img {
+                display: block;
                 max-width: 100%;
                 border-top: 1px solid $main-purple;
-                margin-bottom: -12.5px;
+                margin: 0 auto -12.5px;
             }
         }
 
@@ -495,12 +451,6 @@
 }
 
 @media screen and (max-width: 460px) {
-
-    main section:not(.form, .banner) {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
     .header {
 
         &__logo {
@@ -573,73 +523,8 @@
             line-height: 25px;
         }
     }
-    //
-    //    &__content-title {
-    //        line-height: 45px;
-    //    }
-    //
-    //    &__content-text {
-    //        font-size: 18px;
-    //        line-height: 25px;
-    //    }
-    //
-    //    &__girl {
-    //        top: unset;
-    //        bottom: -70px;
-    //        left: unset;
-    //        margin-right: 0;
-    //        right: 30px;
-    //    }
-    //
-    //    &__girl img {
-    //        width: 250px;
-    //        height: 260px;
-    //    }
-    //}
-
-    .banner {
-        height: 80px;
-
-        &__container {
-            width: 330px;
-            height: 80px;
-            background-size: 230px;
-        }
-
-        &__text {
-            font-size: 12px;
-            line-height: 20px;
-            left: 120px;
-            top: 25px;
-            max-width: 190px;
-        }
-
-        &__img img {
-            width: 66px;
-            height: 10px;
-        }
-
-        &__img {
-            left: 30px;
-            top: 30px;
-        }
-
-        &__text {
-            animation: unset;
-            -webkit-animation-play-state: unset;
-            animation-play-state: unset;
-        }
-    }
 
     .price {
-
-        &__decor {
-            width: 100%;
-            height: 117px;
-            bottom: -4px;
-            left: unset;
-        }
-
         &__text, li, &__price {
             font-size: 15px;
             line-height: 100%;
@@ -655,14 +540,12 @@
         }
 
         &__pin {
-            left: 50%;
-            transform: translate(-70%, -50%);
-            top: 0;
+            top: 15px;
+            width: 30px;
         }
 
         &__pin img {
-            width: 27px;
-            height: 32px;
+            width: 100%;
         }
 
         &__link a {
@@ -698,11 +581,6 @@
     }
 
     .stairway {
-
-        &__arrow img {
-            display: none;
-        }
-
         &__title {
             font-size: 30px;
             line-height: 40px;
@@ -774,10 +652,3 @@
 
     }
 }
-
-//main {
-//    section:not(.form) {
-//        display: none;
-//    }
-//}
-
