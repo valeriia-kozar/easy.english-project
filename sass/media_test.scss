@@ -1,0 +1,21 @@
+@media screen and (max-width: 760px) {
+
+  .test {
+
+    &-container {
+      padding: 0 20px;
+    }
+
+    &-title {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    &-text, &-input::placeholder {
+      font-size: 15px;
+      line-height: 20px;
+    }
+
+  }
+
+}

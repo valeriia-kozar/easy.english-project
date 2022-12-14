@@ -1,0 +1,56 @@
+@media screen and (max-width: 1400px) {
+  .start__test {
+    padding: 0 20px;
+  }
+  .start__test-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .start__test-container {
+    border: none;
+    flex-direction: column;
+    align-items: center;
+  }
+  .start__test-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .start__test-sections {
+    padding: 35px 0;
+  }
+  .start__test-section {
+    font-size: 25px;
+  }
+  .start__test-numbers {
+    top: 113px;
+  }
+  .start__test-numbers img {
+    height: 95px;
+  }
+  .start__test-btn {
+    width: 200px;
+    height: 60px;
+    text-align: center;
+  }
+  .start__test-img {
+    text-align: center;
+    padding: 0;
+  }
+  .start__test-img img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .start__test-numbers {
+    top: 143px;
+  }
+  .start__test-img img {
+    width: 220px;
+    height: 210px;
+  }
+}
+
+/*# sourceMappingURL=media_test-start.css.map */

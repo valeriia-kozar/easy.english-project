@@ -1,35 +1,5 @@
 @import "variables";
 
-@media screen and (max-width: 1260px) {
-    .banner__text {
-        font-size: 5.9vw;
-    }
-}
-
-
-@media screen and (max-width: 1200px) {
-    .easy {
-        margin-top: 300px;
-        &__container {
-            flex-direction: column;
-            height: unset;
-        }
-
-        &__girl, &__content {
-            position: unset;
-        }
-    }
-
-    .background {
-        padding-bottom: 40px;
-
-        &__lamp {
-            right: 0;
-            bottom: -264px;
-        }
-    }
-}
-
 @media screen and (max-width: 1400px) {
 
     main section:not(.form, .banner) {
@@ -95,12 +65,48 @@
 }
 
 @media screen and (max-width: 1285px) {
-    .background__girl {
-        display: none;
+
+
+    .easy {
+        margin-top: 300px;
+
+        &__container {
+            flex-direction: column;
+            height: unset;
+        }
+
+        &__girl, &__content {
+            position: unset;
+        }
     }
 
-    .background__content {
-        width: 100%;
+    .background {
+        padding-bottom: 40px;
+
+        &__girl {
+            display: none;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &__lamp {
+            right: 0;
+            bottom: -264px;
+        }
+    }
+
+    .banner {
+
+        &__text {
+            background-image: unset;
+            font-size: 30px;
+        }
+
+        &__img img {
+            max-width: 200px;
+        }
     }
 }
 
@@ -133,6 +139,17 @@
         .logo {
             width: 37px;
             height: 37px;
+        }
+    }
+
+    .banner {
+        &__text {
+            font-size: 25px;
+            animation: unset;
+        }
+
+        &__img {
+            margin-right: 15px;
         }
     }
 
@@ -269,20 +286,6 @@
         }
     }
 
-    .banner {
-        &__text {
-            font-size: 25px;
-            animation: unset;
-        }
-
-        &__img {
-            margin-right: 15px;
-        }
-    }
-}
-
-@media screen and (max-width: 900px) {
-
 }
 
 @media screen and (max-width: 760px) {
@@ -348,6 +351,21 @@
         &__girl img {
             width: 300px;
             height: 300px;
+        }
+    }
+
+    .banner {
+
+        &, &__container {
+            height: 100px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+        &__img img {
+            max-width: 120px;
         }
     }
 
@@ -499,6 +517,7 @@
         &__lamp {
             left: 0;
             right: 0;
+            bottom: -196px;
         }
 
         &__lamp-container {
@@ -521,6 +540,17 @@
         &__content-text {
             font-size: 18px;
             line-height: 25px;
+        }
+    }
+
+    .banner {
+
+        &, &__container {
+            height: 80px;
+        }
+
+        &__text {
+            font-size: 14px;
         }
     }
 
