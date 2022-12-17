@@ -16,7 +16,7 @@
     <div id="container" class="container">
         <header class="header">
             <div class="head">
-                <a href=""><img src="../img/logoHead.svg" alt="logo"></a>
+                <a href=""><img src="../img/logoHead.svg" class="header__logo" alt="logo"></a>
                 <nav class="header__nav">
                     <ul class="header__nav-items">
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Про нас</a></li>
@@ -26,9 +26,9 @@
                             <a href="#" class="header__nav-link">Контакти</a>
                             <div class="header__nav-img"><img src="../img/arrowDown.svg" alt=""></div>
                             <ul class="header__nav-dropdown">
-                                <div class="header__nav-dropdown-arrow">
+                                <li class="header__nav-dropdown-arrow">
                                     <img src="../img/arrowTop.svg" alt="" >
-                                </div>
+                                </li>
                                 <li class="header__nav-dropdown-tel">
                                     <div class="header__nav-dropdown-img"><img src="../img/tel.svg" alt=""></div>
                                     <h2>Подзвонити</h2>
@@ -48,10 +48,12 @@
                         </li>
                     </ul>
                     <button class="header__btn"><a href="test.html" class="header__btn-text">Тестування рівня</a></button>
-                    <select id="lang" class="lang">
-                        <option value="/ua/">Українська</option>
-                        <option value="/ru/">Російська</option>
-                    </select>
+                    <label>
+                        <select id="lang" class="lang">
+                            <option value="/ua/">Українська</option>
+                            <option value="/ru/">Російська</option>
+                        </select>
+                    </label>
                 </nav>
             </div>
         </header>
@@ -113,18 +115,18 @@
                     </div>
                 </div>
             </section>
-            <div class="banner">
+            <section class="banner">
                 <div class="banner__container">
                     <div class="banner__text">Визначайся з курсом і let’s go!</div>
                     <div class="banner__img"><img src="../img/Pencil.png" alt="banner with pencil"></div>
                 </div>
-            </div>
+            </section>
             <section class="price">
                 <div class="price__container">
-                    <div class="price__box-one">
+                    <div class="price__box">
                         <div class="price__decor">
                             <div class="price__pin"><img src="../img/Pin.png" alt="pin"></div>
-                            <div class="price__thread"><img src="../img/rectangle.png" alt="thread"></div>
+                            <img src="../img/rectangle.png" class="price__line" alt="thread">
                         </div>
                         <div class="price__box-content">
                            <h3 class="price__title">Індивідуальні <span>EASY</span> заняття </h3> 
@@ -142,10 +144,10 @@
                            <div class="price__link"><a href="#">Записатись на пробний урок</a></div>
                         </div>
                     </div>
-                    <div class="price__box-two">
+                    <div class="price__box">
                         <div class="price__decor">
-                            <div class="price__pin-two"><img src="../img/Pin.png" alt="pin"></div>
-                            <div class="price__thread-two"><img src="../img/rectangle.png" alt="thread"></div>
+                            <div class="price__pin"><img src="../img/Pin.png" alt="pin"></div>
+                            <img src="../img/rectangle.png" class="price__line" alt="thread">
                         </div>
                         <div class="price__box-content">
                             <h3 class="price__title">Групові <span>EASY</span> заняття </h3> 
@@ -245,13 +247,13 @@
                     </div> 
                 </div>
             </section>
-            <div class="heart">
+            <section class="heart">
                 <div class="heart__container">
                     <h6 class="heart__title">Ще не визначився? Запишися на пробний урок!</h6>
                     <button class="heart__btn">Хочу пробний урок</button>
                     <div class="heart__image"><img src="../img/plane.svg" alt=""></div>
                 </div>
-            </div>
+            </section>
             <section class="feedback">
                 <div class="feedback__container">
                     <h6 class="feedback__title">Easy відгуки від наших учнів</h6>
@@ -369,17 +371,17 @@
                 </div>
             </section>
             <section id="schedule-lesson" class="form">
-                <h7 class="form__title">Ну всьо, час записуватись на пробний урок!</h7>
+                <h6 class="form__title">Ну всьо, час записуватись на пробний урок!</h6>
                 <div class="form__container">
                     <div class="form__laptop">
-                        <h8 class="form__laptop-title">Запис на пробний урок</h8>
+                        <h6 class="form__laptop-title">Запис на пробний урок</h6>
                         <p class="form__laptop-text">45 хв з викладачем онлайн-школи EasyEnglish. Покажемо як проходять заняття та визначимо план навчання.</p>
                         <div class="form__laptop-img"><img src="../img/formLaptop.svg" alt=""></div>
                     </div>
-                    <form action="form__elements" class="form__elements">
+                    <form  class="form__elements">
                         <div class="form__textarea">
                             <label for="name" class="form__label">Ваше ім’я</label>
-                            <input type="name" id="name" class="form__input" placeholder="Ім’я">
+                            <input type="text" id="name" class="form__input" placeholder="Ім’я">
                         </div>
                         <div class="form__textarea">
                             <label for="tel" class="form__label">Номер телефону</label>
@@ -392,6 +394,7 @@
                         <button class="form__btn"><a href="#">Записатись</a></button>
                     </form>
                 </div>
+                <div class="form__laptop-img-adaptive"><img src="../img/formLaptop.svg" alt=""></div>
             </section>
         </main>
         <footer class="footer">
@@ -410,12 +413,12 @@
                 <div class="footer__box">
                     <div class="footer__box-image">
                         <a href=""><img src="../img/google.svg" alt=""></a>
-                        <a href=""><img src="../img/instagramm.svg" alt=""></a>
+                        <a href=""><img src="../img/instagram.svg" alt=""></a>
                         <a href=""><img src="../img/viber.svg" alt=""></a>
                         <a href=""><img src="../img/telegram.svg" alt=""></a>
                     </div>
                     <div class="footer__contacts">
-                        <a href="mailto: masaovcarenko99@gmail.com" target="blank" class="footer__email contact-link">masaovcarenko99@gmail.com</a>
+                        <a href="mailto: easyenglishmaria@gmail.com" target="blank" class="footer__email contact-link">easyenglishmaria@gmail.com</a>
                         <a href="tel: +38 050 024 8353" class="footer__tel contact-link">+38 050 024 8353</a>
                     </div>
                 </div>

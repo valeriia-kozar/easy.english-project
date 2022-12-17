@@ -1,15 +1,294 @@
-%text-style {
-    font-size: 20px;
-    line-height: 16px;
+@import "variables";
+
+@media screen and (max-width: 1400px) {
+
+    main section:not(.form, .banner) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .header {
+        padding: 0 20px;
+    }
+
+    .easy {
+
+        &__container {
+            margin-top: 20px;
+        }
+
+        &__girl {
+            top: 115px;
+            left: -15px;
+            margin-right: 0;
+        }
+
+        &__girl img {
+            width: 370px;
+        }
+
+        &__content {
+            max-width: 600px;
+        }
+    }
+
+    .heart {
+
+        &__container {
+            position: unset;
+        }
+    }
+    // TODO: CAROUSEL
+    .feedback {
+        display: none;
+
+        &__image-bg svg  {
+            height: 400px;
+        }
+    }
+
+    .form {
+        max-width: 980px;
+
+        &__laptop-img {
+            bottom: -13.5px;
+        }
+
+        &__laptop-img img {
+            width: 500px;
+        }
+
+        &__title {
+            font-size: 38px;
+        }
+    }
 }
 
-%width {
-    max-width: 1190px;
-    width: 100%;
-    margin: auto;
+@media screen and (max-width: 1285px) {
+
+
+    .easy {
+        margin-top: 300px;
+
+        &__container {
+            flex-direction: column;
+            height: unset;
+        }
+
+        &__girl, &__content {
+            position: unset;
+        }
+    }
+
+    .background {
+        padding-bottom: 40px;
+
+        &__girl {
+            display: none;
+        }
+
+        &__content {
+            width: 100%;
+        }
+
+        &__lamp {
+            right: 0;
+            bottom: -264px;
+        }
+    }
+
+    .banner {
+
+        &__text {
+            background-image: unset;
+            font-size: 30px;
+        }
+
+        &__img img {
+            max-width: 200px;
+        }
+    }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 1024px) {
+
+    .header {
+
+        &__nav-link {
+             font-size: 14px;
+            margin-right: 15px;
+        }
+
+        &__nav-img {
+            right: -3px;
+        }
+
+        &__logo {
+            width: 200px;
+            margin-right: 20px;
+        }
+
+        &__btn {
+            width: 140px;
+        }
+
+        &__btn-text {
+            font-size: 14px;
+        }
+
+        .logo {
+            width: 37px;
+            height: 37px;
+        }
+    }
+
+    .banner {
+        &__text {
+            font-size: 25px;
+            animation: unset;
+        }
+
+        &__img {
+            margin-right: 15px;
+        }
+    }
+
+    .price {
+
+        &__title {
+            font-size: 28px;
+            padding: 30px 0;
+        }
+
+        &__link {
+            padding: 20px 0;
+        }
+
+        &__link a {
+            font-size: 22px;
+        }
+    }
+
+    .stairway {
+
+        &__items > &__item:nth-child(2n) {
+            display: none;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        &__item {
+            margin-bottom: 40px;
+        }
+
+        &__items, &__items-two {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+        }
+    }
+
+    .price {
+
+        &__text, &__price, &__level-list, &__lesson-list {
+            font-size: 24px;
+        }
+
+        &__price {
+            padding: 60px 40px;
+        }
+
+        &__box {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        &__container {
+            margin-top: 0;
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+
+    .heart {
+
+        &__title {
+            max-width: 340px;
+            font-size: 24px;
+        }
+    }
+
+
+    .form {
+        margin-top: 100px;
+        max-width: 730px;
+
+        &__container {
+            flex-direction: column;
+            padding: 40px;
+        }
+
+        &__elements {
+            padding-top: 30px;
+            padding-bottom: 0;
+        }
+
+        &__textarea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__textarea:nth-child(3) {
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__laptop {
+            width: 100%;
+        }
+
+        &__laptop-text {
+            margin-top: 10px;
+        }
+
+        &__laptop-img {
+            display: none;
+        }
+
+        &__label {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 0;
+        }
+
+        &__btn {
+            max-width: 510px;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .footer {
+        &__nav-link, .contact-link {
+            font-size: 18px;
+        }
+
+        &__contacts {
+            gap: unset;
+        }
+    }
+
+}
+
+@media screen and (max-width: 760px) {
 
     .header {
         .head {
@@ -17,17 +296,198 @@
             align-items: center;
             padding-top: 50px;
             color: #fff;
-            @extend%width;
+            margin: 0;
+        }
+
+        &__logo {
+            width: 180px;
+            height: 130px;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__btn {
+            display: block;
         }
     }
 
     .background {
-        padding-top: 72px;
-        height: 570px;
+        padding: 140px 0;
+
+        &__text {
+            font-size: 24px;
+        }
+
+        &__btn {
+            font-size: 24px;
+        }
+    }
+
+    .easy {
+
+        &__content {
+            max-width: 730px;
+        }
+
+        &__content-title {
+            line-height: 45px;
+        }
+
+        &__content-text {
+            font-size: 25px;
+            line-height: 25px;
+        }
+
+        &__girl {
+            top: unset;
+            bottom: -70px;
+            left: unset;
+            margin-right: 0;
+            right: 30px;
+        }
+
+        &__girl img {
+            width: 300px;
+            height: 300px;
+        }
+    }
+
+    .banner {
+
+        &, &__container {
+            height: 100px;
+        }
+
+        &__text {
+            font-size: 18px;
+        }
+
+        &__img img {
+            max-width: 120px;
+        }
+    }
+
+    .heart {
+        background-position-x: -15px;
+        background-position-y: -5px;
+        padding-top: 55px;
+        margin-top: 0;
+        max-height: 270px;
+        height: 100%;
+
+        &__container {
+            flex-direction: column;
+            position: unset;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__title {
+            font-size: 25px;
+            line-height: 31px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .form {
+
+        &__container {
+            flex-direction: column;
+            border-radius: 0;
+            padding: 40px 20px 0 20px;
+            margin-top: 35px;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 38px;
+            text-align: center;
+        }
+
+        &__laptop-title {
+            font-size: 30px;
+        }
+
+        &__laptop-text {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        &__laptop-img {
+            display: none;
+        }
+
+        &__laptop-img-adaptive {
+            display: block;
+            width: 100%;
+
+            img {
+                display: block;
+                max-width: 100%;
+                border-top: 1px solid $main-purple;
+                margin: 0 auto -12.5px;
+            }
+        }
+
+        &__input {
+            font-size: 15px;
+
+            &::placeholder {
+                font-size: inherit;
+            }
+        }
+    }
+
+    .footer {
+        margin-top: 0;
+
+        &__container {
+            flex-direction: column;
+            margin-bottom: 40px;
+            justify-content: space-around;
+        }
+
+
+        &__box:nth-child(2) {
+            text-align: center;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__box-image a:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .header {
+
+        &__logo {
+            width: 150px;
+            height: 80px;
+        }
+    }
+
+    .background {
+        padding: 70px ;
 
         &__title {
             font-size: 50px;
             line-height: 60px;
+            margin-top: 70px;
+        }
+
+        &__content {
+            width: 100%;
         }
 
         &__text {
@@ -37,30 +497,44 @@
         }
 
         &__btn {
-            width: 320px;
             height: 50px;
             font-size: 18px;
             line-height: 23px;
+            margin: 0 auto;
+            display: block;
         }
 
         &__text-lesson {
             font-size: 12px;
             line-height: 15px;
+            padding-top: 10px;
         }
 
         &__girl-container {
             display: none;
         }
+
+        &__lamp {
+            left: 0;
+            right: 0;
+            bottom: -196px;
+        }
+
+        &__lamp-container {
+            top: 7px;
+        }
+
+        &__lamp-container svg {
+            width: 80px;
+        }
+
     }
 
     .easy {
-        &__content {
-            @extend%width;
-            height: 240px;
-        }
 
-        &__content-title {
-            line-height: 45px;
+        &__girl img {
+            width: 250px;
+            height: 250px;
         }
 
         &__content-text {
@@ -70,26 +544,141 @@
     }
 
     .banner {
-        height: 80px;
-        margin: 50px 100px 0;
-    
-        &__container {
-            width: 330px;
+
+        &, &__container {
             height: 80px;
-            background-size: 200px;
         }
 
         &__text {
-            font-size: 12px;
-            line-height: 20px;
+            font-size: 14px;
         }
     }
 
     .price {
-
-        &__container {
-            height: 1200px;
-            margin-top: 500px;
+        &__text, li, &__price {
+            font-size: 15px;
+            line-height: 100%;
         }
+
+        &__title, &__text, &__price, &__level-list {
+            padding: 20px;
+            margin-top: 0;
+        }
+
+        &__lesson-list {
+            padding: 30px 0 0;
+        }
+
+        &__pin {
+            top: 15px;
+            width: 30px;
+        }
+
+        &__pin img {
+            width: 100%;
+        }
+
+        &__link a {
+            font-size: 18px;
+            line-height: 27px;
+        }
+
+        &__thread {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &__box-one,
+        &__box-two {
+            max-width: 320px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 20px;
+            line-height: 20px;
+        }
+
+        &__thread img, &__thread-two img {
+            width: 270px;
+        }
+
+        &__box:nth-child(2) {
+            margin-top: 0;
+        }
+    }
+
+    .stairway {
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+
+    .feedback {
+
+        &__title {
+            font-size: 30px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__image-bg {
+            display: none;
+        }
+    }
+
+
+    .form {
+        width: 100%;
+        margin-top: 100px;
+
+
+
+        &__laptop {
+            margin-bottom: 40px;
+            width: unset;
+            margin-right: 70px;
+        }
+
+        &__laptop-title {
+            font-size: 25px;
+            line-height: 31px;
+        }
+
+        &__elements {
+            padding-top: 0;
+        }
+
+        &__label {
+            font-size: 15px;
+        }
+
+        &__btn {
+            margin-top: 20px;
+        }
+
+        &__input {
+            height: 50px;
+        }
+    }
+
+    .footer {
+
+        &__logo img {
+            margin: 30px 0 10px;
+        }
+
     }
 }

@@ -4,7 +4,8 @@
 }
 
 .start__test-container {
-  width: 1190px;
+  max-width: 1190px;
+  width: 100%;
   margin: auto;
 }
 
