@@ -4,7 +4,8 @@
 }
 
 .result .container {
-  width: 1190px;
+  width: 100%;
+  max-width: 1190px;
   margin: auto;
 }
 
@@ -14,8 +15,10 @@
 }
 .result .container {
   display: flex;
-  height: 580px;
+  height: 100%;
+  max-height: 580px;
   border: 1px solid #000;
+  border-radius: 5px;
   position: relative;
   padding: 45px 40px;
   justify-content: space-between;
@@ -42,6 +45,9 @@
   line-height: 30px;
   margin: 40px 0 20px 0;
 }
+.result .text span {
+  font-weight: 700;
+}
 .result .level {
   font-style: italic;
   font-weight: 500;
@@ -58,4 +64,6 @@
   font-weight: 500;
   color: #473C4B;
   margin-top: 40px;
-}/*# sourceMappingURL=test-result.css.map */
+}
+
+/*# sourceMappingURL=test-result.css.map */

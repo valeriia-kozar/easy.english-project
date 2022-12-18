@@ -1,0 +1,38 @@
+@media screen and (max-width: 1400px) {
+  .reading {
+    padding: 40px 20px;
+    margin: 0;
+  }
+  .reading__container {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .reading__container {
+    max-height: 1000px;
+    flex-direction: column-reverse;
+    padding: 20px 20px 50px 20px;
+    align-items: center;
+  }
+  .reading__title {
+    display: none;
+  }
+  .reading__sections {
+    padding: 0;
+  }
+  .reading__form {
+    padding-left: 0;
+  }
+  .reading__text {
+    margin: 20px 0 60px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .reading__img img {
+    width: 280px;
+    height: 220px;
+  }
+}
+
+/*# sourceMappingURL=media_test-reading2.css.map */

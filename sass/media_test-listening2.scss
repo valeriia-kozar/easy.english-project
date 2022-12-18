@@ -1,0 +1,42 @@
+@media screen and (max-width: 1400px) {
+
+  .listening {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .listening {
+
+    &__container {
+      padding: 0;
+      border: none;
+      margin: 100px 0;
+    }
+
+    &__video iframe {
+      width: 520px;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px) {
+
+  .listening {
+
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    &__video iframe {
+      width: 320px;
+      height: 180px;
+    }
+  }
+
+}
+

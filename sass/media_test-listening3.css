@@ -1,0 +1,72 @@
+@media screen and (max-width: 1400px) {
+  .listening {
+    padding: 40px 20px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .listening__container {
+    max-height: 1000px;
+    flex-direction: column;
+    padding: 90px 20px 0 20px;
+  }
+  .listening__sections {
+    padding: 0;
+  }
+  .listening__form {
+    padding-left: 0;
+  }
+  .listening__input {
+    max-width: 280px;
+    width: 100%;
+  }
+  .listening__img-bg {
+    position: unset;
+    text-align: center;
+  }
+  .listening__img-girl {
+    bottom: -10px;
+    right: 200px;
+  }
+  .listening__img-bg img {
+    width: 500px;
+    height: 400px;
+  }
+  .listening__img-girl img {
+    width: 200px;
+    height: 250px;
+  }
+  .listening__text {
+    margin-bottom: 60px;
+    padding-left: 30px;
+  }
+  .listening__btn {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .listening__container {
+    padding: 90px 20px 150px 20px;
+  }
+  .listening__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .listening__text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .listening__img-bg {
+    display: none;
+  }
+  .listening__img-girl img {
+    width: 115px;
+    height: 140px;
+  }
+  .listening__img-girl {
+    bottom: -25px;
+    right: -10px;
+  }
+}
+
+/*# sourceMappingURL=media_test-listening3.css.map */

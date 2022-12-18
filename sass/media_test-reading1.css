@@ -1,0 +1,35 @@
+@media screen and (max-width: 1400px) {
+  .reading {
+    padding: 40px 20px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .reading__grey-text {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .reading__container {
+    border: none;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .reading__title, .reading__title span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .reading__terms {
+    font-style: italic;
+  }
+  .reading__terms, .reading__text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .reading__text {
+    margin-top: 40px;
+  }
+}
+
+/*# sourceMappingURL=media_test-reading1.css.map */

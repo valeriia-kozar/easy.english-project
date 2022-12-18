@@ -1,0 +1,72 @@
+@media screen and (max-width: 1400px) {
+  .grammar {
+    padding: 40px 20px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .grammar__container {
+    flex-direction: column;
+    padding: 90px 20px 0 20px;
+    max-height: 1000px;
+  }
+  .grammar__sections {
+    padding: 0;
+  }
+  .grammar__form {
+    padding-left: 0;
+  }
+  .grammar__input {
+    max-width: 280px;
+    width: 100%;
+  }
+  .grammar__img-bg {
+    position: unset;
+    text-align: center;
+  }
+  .grammar__img-girl {
+    bottom: -10px;
+    right: 200px;
+  }
+  .grammar__img-bg img {
+    width: 500px;
+    height: 400px;
+  }
+  .grammar__img-girl img {
+    width: 200px;
+    height: 250px;
+  }
+  .grammar__text {
+    margin-bottom: 60px;
+    padding-left: 30px;
+  }
+  .grammar__btn {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .grammar__container {
+    padding: 90px 20px 150px 20px;
+  }
+  .grammar__title {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .grammar__text {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .grammar__img-bg {
+    display: none;
+  }
+  .grammar__img-girl img {
+    width: 115px;
+    height: 140px;
+  }
+  .grammar__img-girl {
+    bottom: -25px;
+    right: -10px;
+  }
+}
+
+/*# sourceMappingURL=media_test-grammar1.css.map */

@@ -6,7 +6,8 @@
 }
 
 %width {
-    width: 1190px;
+    max-width: 1190px;
+    width: 100%;
     margin: auto;
 }
 
@@ -17,19 +18,22 @@
 
     &__container {
         display: flex;
-        height: 580px;
+        height: 100%;
+        max-height: 580px;
         @extend%width;
         border: 1px solid #000;
+        border-radius: 5px;
         position: relative;
     }
 
     &__form {
         padding-left: 40px;
+        position: relative;
     }
 
     &__form img {
         position: absolute;
-        left: 65px;
+        left: 0;
     }
 
     &__number {
@@ -37,7 +41,7 @@
         font-size: 15px;
         color: $main-green;
         position: absolute;
-        left: 73px;
+        left: 8px;
     }
 
     &__title {
@@ -61,7 +65,8 @@
         background: $secondary-purple;
         border: 1px solid $secondary-purple;
         border-radius: 3px;
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
         height: 60px;
         padding-left: 45px;
         padding-top: 8px;

@@ -1,0 +1,29 @@
+@media screen and (max-width: 1400px) {
+  .listening {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .listening__container {
+    padding: 0;
+    border: none;
+    margin: 100px 0;
+  }
+  .listening__video iframe {
+    width: 520px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 760px) {
+  .listening__text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .listening__video iframe {
+    width: 320px;
+    height: 180px;
+  }
+}
+
+/*# sourceMappingURL=media_test-listening2.css.map */

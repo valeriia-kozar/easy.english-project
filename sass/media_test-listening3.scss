@@ -1,0 +1,96 @@
+@media screen and (max-width: 1400px) {
+
+  .listening {
+    padding: 40px 20px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .listening {
+
+    &__container {
+      max-height: 1000px;
+      flex-direction: column;
+      padding: 90px 20px 0 20px;
+    }
+
+    &__sections {
+      padding: 0;
+    }
+
+    &__form {
+      padding-left: 0;
+    }
+
+    &__input {
+      max-width: 280px;
+      width: 100%;
+    }
+
+    &__img-bg {
+      position: unset;
+      text-align: center;
+    }
+
+    &__img-girl {
+      bottom: -10px;
+      right: 200px;
+    }
+
+    &__img-bg img {
+      width: 500px;
+      height: 400px;
+    }
+
+    &__img-girl img {
+      width: 200px;
+      height: 250px;
+    }
+
+    &__text {
+      margin-bottom: 60px;
+      padding-left: 30px;
+    }
+
+    &__btn {
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 760px)  {
+
+  .listening {
+
+    &__container {
+      padding: 90px 20px 150px 20px;
+    }
+
+    &__title {
+      font-size: 25px;
+      line-height: 25px;
+    }
+
+    &__text {
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    &__img-bg {
+      display: none;
+    }
+
+    &__img-girl img {
+      width: 115px;
+      height: 140px;
+    }
+
+    &__img-girl {
+      bottom: -25px;
+      right: -10px;
+    }
+  }
+
+}
