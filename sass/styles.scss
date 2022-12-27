@@ -45,6 +45,7 @@
 
     &__nav-item {
         position: relative;
+        margin-right: 25px;
     }
 
     &__nav-item:hover &__nav-dropdown {
@@ -53,21 +54,37 @@
     }
 
     &__nav-link {
-        margin-right: 25px;
         font-weight: 500;
         @extend%text-style;
+    }
+
+    &__nav-link::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 3px;
+        display: block;
+        margin-top: 5px;
+        right: 0;
+        background: #fff;
+        transition: width .2s ease;
+        -webkit-transition: width .2s ease;
+    }
+
+    &__nav-link:hover::after{
+        width: 100%;
     }
 
     &__nav-img {
         position: absolute;
         top: 4px;
-        right: 7px;
+        left: 100px;
     }
 
     &__nav-dropdown {
         position: absolute;
         left: 50%;
-        margin-left: -120px;
+        margin-left: -105px;
         display: none;
         padding: 40px;
         margin-top: 38px;
@@ -284,12 +301,11 @@
         &-container {
             top: 226px;
             position: absolute;
-            height: 100%;
             padding: 20px;
             width: 100%;
-            filter: blur(70px);
+            filter: blur(110px);
             max-width: 570px;
-            max-height: 387px;
+            height: 390px;
         }
     }
 }
@@ -307,7 +323,8 @@
     }
 
     &__girl {
-        margin-right: 50px;
+        margin-right: 40px;
+        margin-left: -90px;
     }
 
     &__content {
@@ -325,7 +342,7 @@
 
     &__content-text {
         color: $main-brown;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 38px;
     }
 }
@@ -360,24 +377,31 @@
     &__text {
         background-image: url(../img/pencil-border.png);
         background-repeat: no-repeat;
-        background-size: contain;
-        background-position: right bottom;
+        background-size: 1000px;
+        background-position: center;
         animation: opacityAnimation 0.5s forwards;
         animation-play-state: paused;
         max-width: 620px;
+        width: 100%;
         font-style: italic;
         font-weight: 700;
         font-size: 40px;
         color: $main-brown;
     }
 
+    //&__text::after {
+    //    content: '';
+    //    width: 1000px;
+    //    height: 1px;
+    //    background: rgba(0, 0, 0, .8);
+    //}
+
     &__img {
-        margin-right: 15px;
+        margin-right: 40px;
 
         img {
             width: 100%;
             max-width: 270px;
-            margin-right: 10px;
         }
     }
 }
@@ -870,21 +894,15 @@
     }
 
     &__nav {
-        display: flex;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    &__nav-items {
-        display: flex;
-        flex-direction: row;
+        margin-top: 30px;
     }
 
     &__nav-link {
-        margin-right: 25px;
-        font-weight: 500;
         color: #000;
-        @extend%text-style
+    }
+
+    &__nav-link::after {
+        background: #000;
     }
 
     &__box-image a {
@@ -911,6 +929,8 @@
     background: $main-green;
     color: rgba(0, 0, 0, 0.3);
     text-align: center;
+    margin-top: 20px;
+    padding: 10px;
 }
 
 ////////////////////////       ANIMATION SECTION         ///////////////////
@@ -1067,7 +1087,7 @@
     }
 
     to {
-        transform: translate(-40px, -20px);
+        transform: translate(-15px, -10px);
     }
 }
 
@@ -1077,7 +1097,7 @@
     }
 
     to {
-        transform: translate(-55px, 20px);
+        transform: translate(-35px, 10px);
     }
 }
 

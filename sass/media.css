@@ -299,12 +299,13 @@
   .form__laptop-img-adaptive {
     display: block;
     width: 100%;
+    padding: 0 5px;
   }
   .form__laptop-img-adaptive img {
     display: block;
     max-width: 100%;
     border-top: 1px solid #7A4AE6;
-    margin: 0 auto -12.5px;
+    margin: 0 auto -10.5px;
   }
   .form__input {
     font-size: 15px;
@@ -328,6 +329,9 @@
   }
   .footer__box-image a:nth-child(1) {
     margin-left: 0;
+  }
+  .footer .copyright {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 460px) {
