@@ -425,12 +425,13 @@
         &__laptop-img-adaptive {
             display: block;
             width: 100%;
+            padding: 0 5px;
 
             img {
                 display: block;
                 max-width: 100%;
                 border-top: 1px solid $main-purple;
-                margin: 0 auto -12.5px;
+                margin: 0 auto -10.5px;
             }
         }
 
@@ -463,6 +464,10 @@
 
         &__box-image a:nth-child(1) {
             margin-left: 0;
+        }
+
+        .copyright {
+            margin-top: 0;
         }
     }
 

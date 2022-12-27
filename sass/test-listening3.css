@@ -4,7 +4,8 @@
 }
 
 .listening__container {
-  width: 1190px;
+  width: 100%;
+  max-width: 1190px;
   margin: auto;
 }
 
@@ -14,23 +15,26 @@
 }
 .listening__container {
   display: flex;
-  height: 580px;
+  height: 100%;
+  max-height: 580px;
   border: 1px solid #000;
+  border-radius: 5px;
   position: relative;
 }
 .listening__form {
   padding-left: 40px;
+  position: relative;
 }
 .listening__form img {
   position: absolute;
-  left: 100px;
+  left: 0;
 }
 .listening__number {
   font-weight: 500;
   font-size: 15px;
   color: #83F4BA;
   position: absolute;
-  left: 108px;
+  left: 8px;
 }
 .listening__title {
   font-weight: 700;
@@ -56,7 +60,8 @@
   background: rgba(122, 74, 230, 0.5);
   border: 1px solid rgba(122, 74, 230, 0.5);
   border-radius: 3px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 60px;
   padding-left: 45px;
   padding-top: 8px;
@@ -108,4 +113,6 @@
 .listening__btn:focus {
   background-color: #7A4AE6;
   color: #fff;
-}/*# sourceMappingURL=test-listening3.css.map */
+}
+
+/*# sourceMappingURL=test-listening3.css.map */

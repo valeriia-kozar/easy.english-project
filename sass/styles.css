@@ -1,4 +1,4 @@
-.footer__tel, .footer__email, .footer__nav-link, .background__text-lesson, .header__btn-text, .header__nav-dropdown h2, .header__nav-link {
+.footer__tel, .footer__email, .background__text-lesson, .header__btn-text, .header__nav-dropdown h2, .header__nav-link {
   font-size: 20px;
   line-height: 25px;
 }
@@ -39,24 +39,39 @@
 }
 .header__nav-item {
   position: relative;
+  margin-right: 25px;
 }
 .header__nav-item:hover .header__nav-dropdown {
   display: block;
   background: #ffffff;
 }
 .header__nav-link {
-  margin-right: 25px;
   font-weight: 500;
+}
+.header__nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.2s ease;
+  -webkit-transition: width 0.2s ease;
+}
+.header__nav-link:hover::after {
+  width: 100%;
 }
 .header__nav-img {
   position: absolute;
   top: 4px;
-  right: 7px;
+  left: 100px;
 }
 .header__nav-dropdown {
   position: absolute;
   left: 50%;
-  margin-left: -120px;
+  margin-left: -105px;
   display: none;
   padding: 40px;
   margin-top: 38px;
@@ -237,12 +252,11 @@
 .background .lamp-light-container {
   top: 226px;
   position: absolute;
-  height: 100%;
   padding: 20px;
   width: 100%;
-  filter: blur(70px);
+  filter: blur(110px);
   max-width: 570px;
-  max-height: 387px;
+  height: 390px;
 }
 
 .easy {
@@ -256,7 +270,8 @@
   margin-top: -30px;
 }
 .easy__girl {
-  margin-right: 50px;
+  margin-right: 40px;
+  margin-left: -90px;
 }
 .easy__content {
   max-width: 715px;
@@ -271,7 +286,7 @@
 }
 .easy__content-text {
   color: #473C4B;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 38px;
 }
 
@@ -303,23 +318,23 @@
 .banner__text {
   background-image: url(../img/pencil-border.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right bottom;
+  background-size: 1000px;
+  background-position: center;
   animation: opacityAnimation 0.5s forwards;
   animation-play-state: paused;
   max-width: 620px;
+  width: 100%;
   font-style: italic;
   font-weight: 700;
   font-size: 40px;
   color: #473C4B;
 }
 .banner__img {
-  margin-right: 15px;
+  margin-right: 40px;
 }
 .banner__img img {
   width: 100%;
   max-width: 270px;
-  margin-right: 10px;
 }
 
 .price {
@@ -721,18 +736,13 @@
   text-align: right;
 }
 .footer__nav {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-.footer__nav-items {
-  display: flex;
-  flex-direction: row;
+  margin-top: 30px;
 }
 .footer__nav-link {
-  margin-right: 25px;
-  font-weight: 500;
   color: #000;
+}
+.footer__nav-link::after {
+  background: #000;
 }
 .footer__box-image a {
   margin-left: 15px;
@@ -754,6 +764,8 @@
   background: #83F4BA;
   color: rgba(0, 0, 0, 0.3);
   text-align: center;
+  margin-top: 20px;
+  padding: 10px;
 }
 
 @keyframes lampLight {
@@ -887,7 +899,7 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(-40px, -20px);
+    transform: translate(-15px, -10px);
   }
 }
 @keyframes thumb-five {
@@ -895,7 +907,7 @@
     transform: translate(0, 0);
   }
   to {
-    transform: translate(-55px, 20px);
+    transform: translate(-35px, 10px);
   }
 }
 .heart-comment {

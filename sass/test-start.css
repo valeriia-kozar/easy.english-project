@@ -16,6 +16,7 @@
 .start__test-container {
   display: flex;
   border: 1px solid #000;
+  border-radius: 5px;
 }
 .start__test-sections {
   padding: 95px 40px 95px 100px;
